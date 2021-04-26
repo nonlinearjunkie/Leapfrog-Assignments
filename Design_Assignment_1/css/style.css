@@ -1,0 +1,187 @@
+.searches-entries {
+    float: left;
+    width: 80%;
+}
+
+.searches {
+    float: left;
+    width: 30%;
+}
+
+.entries {
+    float: right;
+    width: 64.5%;
+    padding: 0 20px;
+}
+
+.entries h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.entries ul li {
+    display: inline-block;
+}
+
+.entries ul li img {
+    width: 240px;
+}
+
+.all-entries,
+.subscribed {
+    position: relative;
+}
+
+.all-entries p,
+.subscribed p {
+    position: absolute;
+    top: 10px;
+    left: 70px;
+}
+
+.all-members p,
+.new-entries p {
+    position: absolute;
+    top: 40px;
+    left: 34px;
+    font-size: 12px;
+}
+
+.new-comments p {
+    position: absolute;
+    top: 40px;
+    left: 131px;
+    font-size: 12px;
+}
+
+.friends p {
+    position: absolute;
+    top: 40px;
+    left: 145px;
+    font-size: 12px;
+}
+
+.all-entries ul li img,
+.subscribed ul li img {
+    width: 100px;
+    padding-left: 18px;
+}
+
+.all-members img,
+.new-entries img {
+    position: absolute;
+    top: 36px;
+}
+
+.friends img,
+.new-comments img {
+    position: absolute;
+    top: 36px;
+    left: 105px;
+}
+
+.searches h3,
+.video-tutorials h3 {
+    background-color: #88e2f2;
+    padding: 15px;
+}
+
+.searches ul,
+.video-tutorials ul {
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+
+.searches ul li,
+.video-tutorials ul li {
+    display: block;
+    padding: 10px;
+}
+
+.searches .recent-searches2 ul {
+    height: 510px;
+}
+
+.searches ul li:hover,
+.video-tutorials ul li:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.searches ul li span {
+    float: right;
+}
+
+.video-tutorials {
+    float: right;
+    width: 20%;
+}
+
+.video-tutorials ul {
+    height: 625px;
+}
+
+.line {
+    background-color: #88e2f2;
+    height: 3px;
+    border: transparent;
+    margin-top: -16px;
+}
+
+.entries-lists {
+    padding-top: 10px;
+}
+
+.entries-list {
+    padding: 18px 0;
+}
+
+.avatar {
+    float: left;
+    width: 16%;
+}
+
+.avatar img {
+    width: 100%;
+}
+
+.info {
+    float: right;
+    width: 82%;
+}
+
+.entries-break {
+    margin-top: 75px;
+}
+
+.info {
+    font-size: 13px;
+}
+
+.sub-info {
+    padding-top: 10px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.author {
+    color: #1ac5e4;
+}
+
+.subscribed-status {
+    color: green;
+}
+
+.new-action,
+.topic-box {
+    color: #1ac5e4;
+    font-weight: bold;
+}
+
+.title-danger {
+    color: red;
+    font-weight: bold;
+}
