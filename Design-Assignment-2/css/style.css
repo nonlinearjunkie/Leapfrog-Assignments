@@ -1,0 +1,120 @@
+@media (min-width: 700px) {
+    .search-input-container {
+        background-image: url("../images/search_bar.png");
+        width: 200px;
+        height: 20px;
+    }
+    .search-input {
+        background-color: #caeff7;
+        border: none;
+        outline: none;
+        width: 85%;
+        margin-left: 4px;
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 998px) {
+    .search-input-container {
+        background-image: url("../images/search_bar.png");
+        width: 245px;
+        height: 20px;
+    }
+    .search-input {
+        background-color: #caeff7;
+        border: none;
+        outline: none;
+        width: 95%;
+        margin-left: 4px;
+        font-size: 11px;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #3b464a;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.header-top-wrapper {
+    background-color: #7dd9e8;
+}
+
+.header-bottom-wrapper {
+    background-color: #f5f5f5;
+}
+
+.cross-icon-container {
+    background-image: url("../images/cross_icon.png");
+}
+
+.cross-icon-container:hover {
+    background-image: url("../images/cross_icon_hover.png");
+}
+
+.search-icon-container {
+    background-image: url("../images/search_icon.png");
+}
+
+.search-icon-container:hover {
+    background-image: url("../images/search_icon_hover.png");
+}
+
+.search-button-container {
+    background-image: url("../images/search_button.png");
+}
+
+.search-icon-container:hover {
+    background-image: url("../images/search_button_hover.png") no-repeat;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.user-profile-link {
+    font-size: 13px;
+}
+
+.account-dropdown>.hover {
+    display: none;
+}
+
+.account-dropdown:hover .not-hover {
+    display: none;
+}
+
+.account-dropdown:hover .hover {
+    display: initial;
+}
+
+.account-dropdown:hover .dropdown-content-first {
+    display: initial;
+}
+
+.user-action-links-left-dropdown:hover .dropdown-content-second {
+    display: block;
+}
+
+.user-action-links-left {
+    color: #505050;
+    font-size: 13px;
+}
+
+.user-action-link-right {
+    color: #505050;
+    font-size: 11px;
+}
+
+.user-action-links-right:hover {
+    background-color: white;
+    cursor: pointer;
+}
