@@ -1,4 +1,5 @@
 @media (min-width: 1px) {
+    /*---------------------header--------------------------------*/
     .account-icon {
         width: 20px;
     }
@@ -86,6 +87,117 @@
         margin-left: 15px;
         padding: 10px 5px 11px 5px;
     }
+    /*---------------------body------------------*/
+    .all-entries,
+    .subscribed {
+        height: 65px;
+        width: 49.8069498%;
+    }
+    .all-entries {
+        border-top-left-radius: 15px;
+    }
+    .subscribed {
+        border-top-right-radius: 15px;
+    }
+    .entry {
+        border-bottom: 1px solid #d8d8d8;
+        padding: 14px 0px 15px 0px;
+    }
+    .entry-container {
+        margin-top: 3px;
+        width: 100%;
+    }
+    .entry-details {
+        width: calc(100% - 45px);
+    }
+    .entry-info {
+        margin-bottom: 4px;
+    }
+    .entry-nav {
+        border-bottom: 2px solid #2fc1da;
+        margin-top: 4px;
+    }
+    .entry-nav-buttons {
+        width: 100%;
+    }
+    .entry-nav-title {
+        padding-top: 12px;
+    }
+    .entry-title {
+        display: none;
+    }
+    .entry-topic {
+        margin-bottom: 5px;
+    }
+    .main-content {
+        margin: 0px auto;
+        padding: 22px 5% 0px 5%;
+        width: 90%;
+        height: 100%;
+    }
+    .main-left {
+        width: 100%;
+    }
+    .notification {
+        margin-bottom: 3px;
+        margin-top: 2px;
+    }
+    .pad-left {
+        margin-left: 3.87596899%;
+    }
+    .pad-left1 {
+        padding-left: 1px;
+    }
+    .pad-right {
+        margin-right: 3.87596899%;
+    }
+    .pad-right1 {
+        padding-right: 1px;
+    }
+    .pad-right2 {
+        padding-right: 2px;
+    }
+    .pad2 {
+        padding-bottom: 12px;
+    }
+    .profile {
+        width: 100%;
+    }
+    .profile-pic {
+        margin-top: 1px;
+        width: 35px;
+    }
+    .selected-button {
+        height: 19px;
+        margin-top: 11px;
+        padding-top: 9px;
+        width: 44.1860465%;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+    .sidebar-left {
+        display: none;
+    }
+    .sidebar-right {
+        display: none;
+    }
+    .user-profile {
+        display: none;
+    }
+    .unselected-button {
+        height: 19px;
+        margin-top: 11px;
+        padding-top: 9px;
+        width: 44.1860465%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    /*----------------------footer-----------------*/
+    .footer,
+    .footer-container,
+    .footer-wrapper {
+        width: 100%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -146,6 +258,72 @@
     .user-action-links-left-dropdown {
         display: none;
     }
+    /*--------------------body-------------------*/
+    input:focus,
+    .cross-icon,
+    .search-icon {
+        border: 0px;
+        outline: none;
+    }
+    .entry {
+        border-bottom: 1px solid #d8d8d8;
+        padding: 14px 0px 15px 0px;
+    }
+    .entry-details {
+        width: calc(100% - 55px);
+    }
+    .entry-title {
+        display: initial;
+    }
+    .main-content {
+        padding: 25px 5% 12px 5%;
+        width: 90%;
+    }
+    .main-left {
+        height: 100%;
+        width: 72.1448468%;
+    }
+    .notification {
+        margin-bottom: 3px;
+        margin-top: 2px;
+    }
+    .profile {
+        width: 100%;
+    }
+    .profile-pic {
+        width: 45px;
+    }
+    .sidebar-left {
+        display: none;
+    }
+    .sidebar-right {
+        margin-top: 8px;
+        height: 335px;
+        display: initial;
+        width: 24.5125348%;
+    }
+    .sidebar-right-content-wrapper {
+        height: 309px;
+    }
+    .sidebar-right-content {
+        padding: 10px 0px 10px 12px;
+    }
+    .sidebar-right-content:hover {
+        background-color: white;
+    }
+    .sidebar-title-right {
+        padding: 13px 12px 11px 13px;
+    }
+    /*--------------------footer-------------------*/
+    .footer-content {
+        margin: 0px auto;
+        padding: 18px 5% 17px 5%;
+    }
+    .footer-wrapper {
+        height: 45px;
+        margin: 32px auto 0px auto;
+        width: 100%;
+    }
 }
 
 @media (min-width: 998px) {
@@ -184,5 +362,160 @@
     }
     .user-action-icons-right {
         display: none;
+    }
+    /*--------------body----------------*/
+    img.profile {
+        width: 70px;
+    }
+    input:focus {
+        border: 0px;
+        outline: none;
+    }
+    ul.margin-right {
+        margin-right: 4px;
+    }
+    .entry {
+        border-bottom: 1px solid #d8d8d8;
+        padding: 14px 0px 15px 0px;
+    }
+    .entry-container {
+        margin-top: 3px;
+        width: 70.1897019%;
+    }
+    .entry-details {
+        width: calc(100% - 80px);
+    }
+    .entry-info {
+        margin-bottom: 4px;
+    }
+    .entry-nav {
+        border-bottom: 2px solid #2fc1da;
+        margin-top: 4px;
+    }
+    .entry-nav-title {
+        padding-top: 12px;
+    }
+    .entry-title {
+        display: initial;
+    }
+    .entry-topic {
+        margin-bottom: 5px;
+    }
+    .main-content {
+        padding: 22px 28px 0px 32px;
+        width: 94.011976%;
+        margin: 0px;
+    }
+    .main-left {
+        width: 78.6780384%;
+    }
+    .notification {
+        margin-bottom: 3px;
+        margin-top: 2px;
+    }
+    .pad-left {
+        margin-left: 10px;
+    }
+    .pad-left1 {
+        padding-left: 1px;
+    }
+    .pad-right {
+        margin-right: 10px;
+    }
+    .pad-right1 {
+        padding-right: 1px;
+    }
+    .pad-right2 {
+        padding-right: 2px;
+    }
+    .pad2 {
+        padding-bottom: 12px;
+    }
+    .profile-pic {
+        margin-top: 1px;
+        height: 70px;
+    }
+    .sidebar-bottom {
+        height: 431px;
+    }
+    .sidebar-content {
+        position: relative;
+    }
+    .sidebar-icon-download {
+        position: absolute;
+        bottom: 7px;
+        right: 14px;
+    }
+    .sidebar-icon-menu {
+        position: absolute;
+        top: 40.99%;
+        right: 14px;
+    }
+    .sidebar-left {
+        display: initial;
+        margin-top: 8px;
+        width: 26.2872629%;
+        height: 605px;
+    }
+    .sidebar-right {
+        display: initial;
+        margin-top: 8px;
+        width: 18.7633262%;
+        height: 605px;
+    }
+    .sidebar-right-content-wrapper {
+        height: 309px;
+    }
+    .sidebar-right-content {
+        padding: 10px 0px 10px 12px;
+    }
+    .sidebar-right-content:hover {
+        background-color: white;
+    }
+    .sidebar-text {
+        padding: 13px 18px 7px 11px;
+        position: relative;
+        width: 140px;
+    }
+    .sidebar-text-bottom {
+        padding: 10px 7px 10px 11px;
+        position: relative;
+        width: 150px;
+    }
+    .sidebar-title-bottom {
+        padding: 12px 12px 12px 12px;
+        border-bottom: 1px solid #f0f4f5;
+    }
+    .sidebar-title-right {
+        border-bottom: 3px solid #f5f5f5;
+        padding: 13px 12px 11px 13px;
+    }
+    .sidebar-title-top {
+        padding: 13px 12px 11px 12px;
+    }
+    .sidebar-top {
+        height: 89px;
+    }
+    .top-text-bottom-sidebar {
+        margin-bottom: 4px;
+        padding-top: 1px;
+    }
+    .top-text-top-sidebar {
+        margin-bottom: 4px;
+    }
+    /*-------------footer-------------*/
+    .footer-container {
+        width: 100%;
+        margin: 0px auto;
+    }
+    .footer-content {
+        margin: 0px auto;
+        padding: 18px 3.09381238% 17px 3.29341317%;
+        width: 93.612774451%;
+    }
+    .footer-wrapper {
+        height: 45px;
+        margin: 32px auto 0px auto;
+        width: 100%;
     }
 }
