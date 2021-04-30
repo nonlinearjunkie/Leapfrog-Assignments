@@ -1,0 +1,433 @@
+/*------------->header<------------------*/
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.logo-container {
+    margin-top: 3.34%;
+    margin-left: 2.71%;
+}
+
+.header-top-right {
+    width: 80%;
+}
+
+.featured-products-container {
+    margin-left: 12%;
+    margin-top: 11.8%;
+    width: 50%;
+    min-height: 28em;
+    /*400px*/
+}
+
+.featured-products-top-container {
+    width: 86.7%;
+    margin: auto;
+    padding-top: 4em;
+    padding-bottom: 1.5em;
+    border-bottom: 2px solid black;
+}
+
+.featured-products-bottom-container {
+    width: 89.18%;
+    margin: auto;
+    padding-top: 2em;
+}
+
+.featured-products-bottom-items {
+    margin-right: 3em;
+}
+
+.search-and-cart {
+    width: 26%;
+    margin-top: 3.34%;
+    margin-right: 3%;
+}
+
+.header-icons {
+    width: 33%;
+}
+
+.search {
+    text-align: left;
+}
+
+.cart {
+    text-align: center;
+}
+
+.hamburger-menu {
+    text-align: right;
+}
+
+.header-bottom {
+    width: 60%;
+    margin: auto;
+}
+
+.nav-items {
+    width: 14.28%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    text-align: center;
+}
+
+
+/*------------->Featured Products Section<------------------*/
+
+.featured-products {
+    margin-top: 10em;
+}
+
+.featured-products-content-wrapper,
+.horizontal-line-wrapper {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 10em;
+}
+
+.featured-products-content {
+    width: 30%;
+    min-height: 16em;
+    background-color: #f4f4f4;
+    margin-left: 3%;
+    position: relative;
+}
+
+.featured-products-inner-div {
+    width: 84%;
+    min-height: 10.28em;
+    background-color: #f4f4f4;
+    border-left: 3px red;
+    border-top: 3px red;
+    position: absolute;
+    left: 16%;
+    top: 5.72em;
+    z-index: 1;
+}
+
+.featured-products-content-heading {
+    position: absolute;
+    left: 3em;
+    top: 3em;
+}
+
+.more-details {
+    display: none;
+}
+
+.featured-products-content:hover .more-details {
+    display: initial;
+    position: absolute;
+    left: 1em;
+    top: 0.5em;
+}
+
+
+/*------------->Latest Furniture Section<------------------*/
+
+.latest-furniture-top {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.latest-furniture-horizontal-line-wrapper {
+    width: 6.5%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.latest-furniture-horizontal-line {
+    height: 2px;
+    color: #c1c1c1;
+    border-width: 0;
+    background-color: #c1c1c1;
+}
+
+.latest-furniture-boxes-wrapper {
+    width: 61.8%;
+    margin: auto;
+}
+
+.latest-furniture-box {
+    position: relative;
+    margin-left: 2.5%;
+    width: 22.5%;
+    border: 1px solid #f4f4f4;
+}
+
+.latest-furniture-box-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.latest-furniture-desc {
+    margin-top: 22em;
+    text-align: center;
+}
+
+.latest-furniture-box-tag {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
+.latest-furniture-box-heading {
+    margin-bottom: 1em;
+}
+
+.latest-furniture-cart-content-wrapper {
+    width: 55%;
+    margin: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+/*------------->Why Choose Youniverse Section<------------------*/
+
+.why-choose-content {
+    width: 31%;
+    margin-left: 49%;
+    margin-right: 20%;
+    margin-bottom: 12.2em;
+}
+
+.why-choose-youniverse {
+    margin-top: 13.5em;
+    overflow: auto;
+}
+
+.why-choose-heading-wrapper {
+    padding-top: 12em;
+    padding-bottom: 2em;
+}
+
+.why-choose-horizontal-line {
+    height: 2px;
+    max-width: 8em;
+}
+
+.why-choose-para-top {
+    padding-top: 3.7em;
+    padding-bottom: 4.5em;
+}
+
+.why-choose-para-bottom {
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.why-choose-nav {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    margin-bottom: 1em;
+}
+
+.plenty-of-pages {
+    margin-bottom: 9em;
+}
+
+
+/*------------->Latest Posts Section<------------------*/
+
+.latest-posts {
+    margin-bottom: 9em;
+}
+
+.latest-posts-wrapper {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 8em;
+}
+
+.latest-posts-hr-wrapper {
+    width: 6.5%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.latest-posts-hr {
+    height: 2px;
+    color: #c1c1c1;
+    border-width: 0;
+    background-color: #c1c1c1;
+}
+
+.latest-post-box-container {
+    margin-top: 3em;
+}
+
+.latest-post-box {
+    width: 30%;
+    margin-left: 3%;
+}
+
+.latest-post-box-top-block {
+    min-height: 16em;
+    background-color: #c1c1c1;
+    margin-bottom: 1em;
+}
+
+.date-block {
+    border: 2px solid #f4f4f4;
+    padding: 1em;
+    margin-right: 1em;
+}
+
+.desc-block {
+    margin-top: 1em;
+    width: 80%;
+    text-align: left;
+}
+
+.post-info {
+    margin-top: 0.5em;
+}
+
+.post-info-items {
+    margin-right: 1em;
+}
+
+.post-details {
+    margin-top: 1em;
+}
+
+
+/*------------->Get our discounts<------------------*/
+
+.get-our-discounts {
+    text-align: right;
+}
+
+.get-our-discounts-wrapper {
+    position: relative;
+    background: black;
+    display: inline-block;
+    color: white;
+    width: 50%;
+}
+
+.get-our-discounts-wrapper::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: -10%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: inherit;
+    -webkit-transform: skewX(-10deg);
+    -moz-transform: skewX(-10deg);
+    -ms-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+}
+
+.get-our-discounts-content-wrapper {
+    width: 55%;
+    margin-right: 32%;
+    text-align: left;
+}
+
+.get-discounts-heading {
+    margin-top: 6em;
+}
+
+.get-discounts-hr-wrapper {
+    width: 6.5%;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    text-align: left;
+}
+
+.get-discounts-hr {
+    height: 2px;
+    color: #c1c1c1;
+    border-width: 0;
+    background-color: #c1c1c1;
+}
+
+.get-discounts-desc {
+    margin-bottom: 2em;
+}
+
+.discounts-input {
+    height: 1.5em;
+    font-size: 1.5em;
+    margin-right: 1.5em;
+}
+
+.subscribe-btn-wrapper {
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+
+.subscribe-btn {
+    background-color: #f4f4f4;
+    color: black;
+    padding: 0.6em 2em;
+    border: none;
+    text-align: center;
+}
+
+
+/*------------->Newest Collection Section<------------------*/
+
+.newest-collections {
+    margin-top: 8em;
+}
+
+.newest-collections-content {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.newest-collections-hr-wrapper {
+    width: 6.5%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.newest-collections-hr {
+    height: 3px;
+    color: #c1c1c1;
+    border-width: 0;
+    background-color: #c1c1c1;
+}
+
+.newest-collections-menu {
+    margin-top: 3em;
+    width: 57%;
+    margin: auto;
+}
+
+.newest-collection-menu-items {
+    width: 19.5%;
+    margin-right: 0.5%;
+    padding: 1em 2em;
+    border: 2px solid #f4f4f4;
+}
+
+.newest-collections-blocks-container {
+    margin-top: 5em;
+}
+
+.newest-collections-block {
+    width: 31%;
+    min-height: 20em;
+    margin-left: 2%;
+    margin-bottom: 2em;
+    background-color: #f4f4f4;
+}
