@@ -110,6 +110,11 @@ p.header-cart span {
     background-color: #f7f7f7;
 }
 
+.featured-product-left-arrow:hover,
+.featured-product-right-arrow:hover {
+    cursor: pointer;
+}
+
 
 /*------------->Latest Furniture Section<------------------*/
 
