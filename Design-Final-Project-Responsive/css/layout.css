@@ -351,7 +351,6 @@ p.header-cart span {
 }
 
 .date-block {
-    border: 2px solid #f4f4f4;
     padding: 1em;
     margin-right: 1em;
 }
@@ -375,7 +374,7 @@ p.header-cart span {
 }
 
 
-/*------------->Get our discounts<------------------*/
+/*------------->Get our discounts Section<------------------*/
 
 .get-our-discounts {
     text-align: right;
@@ -385,7 +384,6 @@ p.header-cart span {
     position: relative;
     background: black;
     display: inline-block;
-    color: white;
     width: 50%;
 }
 
@@ -421,13 +419,6 @@ p.header-cart span {
     text-align: left;
 }
 
-.get-discounts-hr {
-    height: 2px;
-    color: #c1c1c1;
-    border-width: 0;
-    background-color: #c1c1c1;
-}
-
 .get-discounts-desc {
     margin-bottom: 2em;
 }
@@ -441,14 +432,7 @@ p.header-cart span {
 .subscribe-btn-wrapper {
     margin-top: 3em;
     margin-bottom: 5em;
-}
-
-.subscribe-btn {
-    background-color: #f4f4f4;
-    color: black;
-    padding: 0.6em 2em;
-    border: none;
-    text-align: center;
+    position: relative;
 }
 
 
