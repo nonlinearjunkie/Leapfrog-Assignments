@@ -1,0 +1,46 @@
+/*------------->header<------------------*/
+
+.header-top {
+    background-color: #dfdfdf;
+}
+
+.header-bottom-wrapper {
+    background-color: black;
+}
+
+.nav-items {
+    color: white;
+}
+
+.featured-products-top-container {
+    border-bottom: 2px solid black;
+}
+
+
+/*------------->Latest Furniture Section<------------------*/
+
+.latest-furniture-cart {
+    background-color: peru;
+    color: white;
+}
+
+
+/*------------->Why Choose Youniverse Section<------------------*/
+
+.why-choose-youniverse {
+    background-color: rgb(31, 30, 30);
+    color: white;
+}
+
+.why-choose-horizontal-line {
+    color: rgba(209, 209, 24, 0.747);
+    border-width: 0;
+    background-color: rgba(209, 209, 24, 0.747);
+}
+
+.why-choose-nav {
+    border: 1px solid white;
+}
+
+
+/*------------->Latest Posts Section<------------------*/
