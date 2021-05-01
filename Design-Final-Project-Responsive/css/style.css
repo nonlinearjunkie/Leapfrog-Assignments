@@ -191,17 +191,33 @@ p.header-cart span {
 /*------------->Why Choose Youniverse Section<------------------*/
 
 .why-choose-youniverse {
-    background-color: rgb(31, 30, 30);
-    color: white;
+    background-color: #010101;
+    color: #ffffff;
+}
+
+.why-choose-heading {
+    font-family: "Lato", sans-serif;
+    font-size: 2em;
+    font-weight: 400;
 }
 
 .why-choose-horizontal-line {
-    color: rgba(209, 209, 24, 0.747);
+    color: #fac012;
     border-width: 0;
-    background-color: rgba(209, 209, 24, 0.747);
+    background-color: #fac012;
+}
+
+.why-choose-para-top,
+.why-choose-para-bottom {
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 2em;
 }
 
 .why-choose-nav {
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 2em;
     border: 1px solid white;
 }
 

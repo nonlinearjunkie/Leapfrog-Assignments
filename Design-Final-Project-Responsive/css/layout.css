@@ -291,6 +291,32 @@ p.header-cart span {
     padding-bottom: 1em;
     padding-left: 2em;
     margin-bottom: 1em;
+    position: relative;
+}
+
+.why-choose-nav:hover {
+    background-color: #fac012;
+    cursor: pointer;
+}
+
+.why-choose-nav:hover .nav-arrow {
+    display: none;
+}
+
+.why-choose-nav:hover h4::after {
+    content: url("../images/why-nav-hover.png");
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.nav-arrow {
+    left: 100%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .plenty-of-pages {
