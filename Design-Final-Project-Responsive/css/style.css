@@ -118,9 +118,73 @@ p.header-cart span {
 
 /*------------->Latest Furniture Section<------------------*/
 
+.latest-furniture-heading {
+    color: #1c1105;
+    font-family: "Lato", sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.latest-furniture-hr {
+    height: 2px;
+    color: #e7e7e7;
+    border-width: 0;
+    background-color: #e7e7e7;
+}
+
+.latest-furniture-box-tag {
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 0.7em 0.9em;
+    color: #ffffff;
+}
+
+.latest-furniture-box {
+    border: 1px solid #f4f4f4;
+}
+
+.latest-furniture-box-heading {
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: #1c1105;
+}
+
+.latest-furniture-box-content {
+    color: #9c9c9c;
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 2em;
+}
+
+.latest-furniture-box-price {
+    color: #fac012;
+    font-family: "Lato", sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 4em;
+}
+
+.promo {
+    background-color: #1c1105;
+}
+
+.new {
+    background-color: #fac012;
+}
+
 .latest-furniture-cart {
-    background-color: peru;
-    color: white;
+    background-color: #fac012;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    font-family: "Lato", sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #ffffff;
 }
 
 

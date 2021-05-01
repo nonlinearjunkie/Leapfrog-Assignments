@@ -210,6 +210,13 @@ p.header-cart span {
     margin: auto;
 }
 
+.latest-furniture-hr-wrapper {
+    width: 6.5%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
 .latest-furniture-box {
     position: relative;
     margin-left: 2.5%;
