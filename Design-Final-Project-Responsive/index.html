@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -20,10 +22,19 @@
             </div>
             <div class="header-top-right right clearfix">
                 <div class="featured-products-container left">
+                    <div class="left-arrow absolute">
+                        <img src="images/left.png" alt="Left Arrow" />
+                    </div>
+                    <div class="right-arrow absolute">
+                        <img src="images/right.png" alt="Right Arrow" />
+                    </div>
                     <div class="featured-products-top-container clearfix">
                         <h3 class="featured-products-heading left">Featured Products</h3>
-                        <div class="more-details-btn right">
-                            <button>More <span class="details-span">Details</span></button>
+                        <div class="more-details-btn btn-container right">
+                            <button class="btn">More<span> Details </span></button>
+                            <div class="btn-arrow">
+                                <img src="images/btn_arrow.png" alt="Button Arrow" />
+                            </div>
                         </div>
                     </div>
                     <div class="featured-products-bottom-container clearfix">
@@ -31,7 +42,7 @@
                             <div class="featured-products-icon left">
                                 <img src="images/furniture.png" alt="Davis Furniture" />
                             </div>
-                            <div class="featured-products-desc right">
+                            <div class="featured-products-desc left">
                                 <h4 class="featured-products-desc-top">Davis Furniture</h4>
                                 <p class="featured-products-desc-bottom">
                                     Leather Collection 2015
@@ -40,11 +51,10 @@
                         </div>
 
                         <div class="price featured-products-bottom-items left clearfix">
-                            <div class="featured-products-icon left clearfix">
-                                <img src="images/price_icon.png" class="left" alt="Price Icon" />
-                                <p class="header-cart left">00 <span>ITEMS</span></p>
+                            <div class="featured-products-icon left">
+                                <img src="images/price_icon.png" alt="Price Icon" />
                             </div>
-                            <div class="featured-products-desc right">
+                            <div class="featured-products-desc left">
                                 <h4 class="featured-products-desc-top">Starting Price:</h4>
                                 <p class="featured-products-desc-bottom">&dollar;399.00</p>
                             </div>
@@ -54,7 +64,7 @@
                             <div class="featured-products-icon left">
                                 <img src="images/color_alternatives_icon.png" alt="Color Alternatives Icon" />
                             </div>
-                            <div class="featured-products-desc right">
+                            <div class="featured-products-desc left">
                                 <h4 class="featured-products-desc-top">
                                     Color Alternatives:
                                 </h4>
@@ -67,8 +77,9 @@
                     <div class="search header-icons left">
                         <img src="images/search.png" alt="Search" />
                     </div>
-                    <div class="cart header-icons left">
-                        <img src="images/cart-header.png" alt="Cart" />
+                    <div class="cart header-icons left clearfix">
+                        <img src="images/cart-header.png" class="left" alt="Cart" />
+                        <p class="header-cart left">00 <span>ITEMS</span></p>
                     </div>
                     <div class="hamburger-menu header-icons left">
                         <img src="images/hamburgerMenu.png" alt="Hamburger Menu" />
@@ -98,24 +109,45 @@
             <div class="featured-products-content left">
                 <h4 class="featured-products-content-heading">SOFAS</h4>
                 <div class="featured-products-inner-div">
-                    <button class="more-details">More <span>Details</span></button>
+                    <div class="more-details-btn more-details btn-container right">
+                        <button class="btn">More<span> Details </span></button>
+                        <div class="btn-arrow">
+                            <img src="images/btn_arrow.png" alt="Button Arrow" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="featured-products-content left">
                 <h4 class="featured-products-content-heading">ARMCHAIRS</h4>
                 <div class="featured-products-inner-div">
-                    <button class="more-details">More <span>Details</span></button>
+                    <div class="more-details-btn more-details btn-container right">
+                        <button class="btn">More<span> Details </span></button>
+                        <div class="btn-arrow">
+                            <img src="images/btn_arrow.png" alt="Button Arrow" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="featured-products-content left">
                 <h4 class="featured-products-content-heading">SINGLEBEDS</h4>
                 <div class="featured-products-inner-div">
-                    <button class="more-details">More <span>Details</span></button>
+                    <div class="more-details-btn more-details btn-container right">
+                        <button class="btn">More<span> Details </span></button>
+                        <div class="btn-arrow">
+                            <img src="images/btn_arrow.png" alt="Button Arrow" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="horizontal-line-wrapper">
-            <hr />
+        <div class="featured-products-hr-wrapper">
+            <div class="featured-product-left-arrow absolute">
+                <img src="images/featured-product-left.png" alt="Featured Product Left Arrow" />
+            </div>
+            <div class="featured-product-right-arrow absolute">
+                <img src="images/featured-product-right.png" alt="Featured Product Right Arrow" />
+            </div>
+            <hr class="featured-products-hr" />
         </div>
     </section>
 

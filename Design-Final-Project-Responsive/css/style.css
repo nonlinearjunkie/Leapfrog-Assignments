@@ -8,12 +8,106 @@
     background-color: black;
 }
 
+.btn {
+    width: 13em;
+    min-height: 4em;
+    background-color: #1c1105;
+    color: #ffffff;
+    font-size: 1em;
+    border: none;
+    font-family: "Lato - Regular", sans-serif;
+    font-weight: 400;
+}
+
+.more-details-btn span {
+    font-family: "Lato- Bold ", sans-serif;
+    font-weight: 700;
+}
+
 .nav-items {
-    color: white;
+    color: #ffffff;
+    font-family: "Lato - Regular", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.nav-items:hover {
+    color: #fac012;
+    cursor: pointer;
+}
+
+.nav-items:hover::after {
+    margin-left: 0.3rem;
+    content: url("../images/hover_arrow.png");
 }
 
 .featured-products-top-container {
     border-bottom: 2px solid black;
+}
+
+p.header-cart {
+    color: #1c1105;
+    font-family: Lato;
+    font-size: 2.5em;
+}
+
+p.header-cart span {
+    font-size: 0.35em;
+}
+
+.featured-products-container {
+    border: 0.5em solid #fac012;
+}
+
+.featured-products-top-container {
+    border-bottom: 2px solid black;
+}
+
+.featured-products-desc-bottom {
+    color: #1c1105;
+    font-family: "Lato - Regular", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.featured-products-heading {
+    color: #1c1105;
+    font-family: "Lato", sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.featured-products-desc-top {
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+
+/*------------->Featured Products Section<------------------*/
+
+.featured-products-content-heading {
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: #1c1105;
+}
+
+.featured-products-content {
+    background-color: #f4f4f4;
+}
+
+.featured-products-inner-div {
+    background-color: #f4f4f4;
+    border-left: 0.4rem solid #ffffff;
+    border-top: 0.4rem solid #ffffff;
+}
+
+.featured-products-hr {
+    height: 0.2em;
+    border-width: 0;
+    background-color: #f7f7f7;
 }
 
 

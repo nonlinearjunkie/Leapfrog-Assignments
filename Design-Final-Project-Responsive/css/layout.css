@@ -1,7 +1,19 @@
 /*------------->header<------------------*/
 
+button:hover {
+    cursor: pointer;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
 .left {
     float: left;
+}
+
+.absolute {
+    position: absolute;
 }
 
 .right {
@@ -9,8 +21,8 @@
 }
 
 .logo-container {
-    margin-top: 3.34%;
-    margin-left: 2.71%;
+    margin-top: 6em;
+    margin-left: 0.9em;
 }
 
 .header-top-right {
@@ -21,7 +33,23 @@
     margin-left: 12%;
     margin-top: 11.8%;
     width: 50%;
-    min-height: 28em;
+    min-height: 30em;
+    margin-bottom: 23.6rem;
+    position: relative;
+}
+
+.btn-container {
+    position: relative;
+}
+
+.btn-arrow {
+    position: absolute;
+    top: 1.6em;
+    left: 11.5em;
+}
+
+.featured-products-desc {
+    margin-left: 1em;
 }
 
 .featured-products-top-container {
@@ -29,7 +57,6 @@
     margin: auto;
     padding-top: 4em;
     padding-bottom: 1.5em;
-    border-bottom: 2px solid black;
 }
 
 .featured-products-bottom-container {
@@ -38,8 +65,23 @@
     padding-top: 2em;
 }
 
+.left-arrow {
+    top: 50%;
+    left: 0;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.right-arrow {
+    top: 50%;
+    right: 0;
+    -ms-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+}
+
 .featured-products-bottom-items {
-    margin-right: 3em;
+    margin-right: 1.5em;
+    width: 30%;
 }
 
 .search-and-cart {
@@ -58,6 +100,16 @@
 
 .cart {
     text-align: center;
+}
+
+p.header-cart {
+    position: relative;
+}
+
+p.header-cart span {
+    font-size: 0.35em;
+    position: absolute;
+    top: 0.3em;
 }
 
 .hamburger-menu {
@@ -93,7 +145,6 @@
 .featured-products-content {
     width: 30%;
     min-height: 16em;
-    background-color: #f4f4f4;
     margin-left: 3%;
     position: relative;
 }
@@ -101,9 +152,6 @@
 .featured-products-inner-div {
     width: 84%;
     min-height: 10.28em;
-    background-color: #f4f4f4;
-    border-left: 3px red;
-    border-top: 3px red;
     position: absolute;
     left: 16%;
     top: 5.72em;
@@ -127,6 +175,27 @@
     top: 0.5em;
 }
 
+.featured-products-hr-wrapper {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 10em;
+    position: relative;
+}
+
+.featured-product-left-arrow {
+    left: 45%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.featured-product-right-arrow {
+    left: 55%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 
 /*------------->Latest Furniture Section<------------------*/
 
@@ -134,20 +203,6 @@
     width: 60%;
     margin: auto;
     text-align: center;
-}
-
-.latest-furniture-horizontal-line-wrapper {
-    width: 6.5%;
-    margin: auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-
-.latest-furniture-horizontal-line {
-    height: 2px;
-    color: #c1c1c1;
-    border-width: 0;
-    background-color: #c1c1c1;
 }
 
 .latest-furniture-boxes-wrapper {
