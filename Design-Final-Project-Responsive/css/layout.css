@@ -294,24 +294,6 @@ p.header-cart span {
     position: relative;
 }
 
-.why-choose-nav:hover {
-    background-color: #fac012;
-    cursor: pointer;
-}
-
-.why-choose-nav:hover .nav-arrow {
-    display: none;
-}
-
-.why-choose-nav:hover h4::after {
-    content: url("../images/why-nav-hover.png");
-    position: absolute;
-    left: 100%;
-    top: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
 .nav-arrow {
     left: 100%;
     top: 50%;
@@ -344,13 +326,6 @@ p.header-cart span {
     margin-bottom: 2em;
 }
 
-.latest-posts-hr {
-    height: 2px;
-    color: #c1c1c1;
-    border-width: 0;
-    background-color: #c1c1c1;
-}
-
 .latest-post-box-container {
     margin-top: 3em;
 }
@@ -362,8 +337,17 @@ p.header-cart span {
 
 .latest-post-box-top-block {
     min-height: 16em;
-    background-color: #c1c1c1;
     margin-bottom: 1em;
+    position: relative;
+}
+
+.post-box-hover {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: none;
 }
 
 .date-block {
