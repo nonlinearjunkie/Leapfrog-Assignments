@@ -1,0 +1,94 @@
+@media (min-width: 480px) {
+    /* dropdon-menu */
+    .featured-products-content {
+        width: 50%;
+    }
+    .latest-furniture-box {
+        width: 75%;
+        margin: auto;
+    }
+    .why-choose-content {
+        width: 70%;
+        margin-left: 20%;
+        margin-right: 10%;
+        margin-bottom: 12.2em;
+    }
+    .latest-post-box {
+        width: 60%;
+        margin: auto;
+        margin: 3em 20%;
+    }
+    .newest-collections-block {
+        width: 48%;
+        min-height: 20em;
+        margin-left: 2%;
+        margin-bottom: 2em;
+        position: relative;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-bottom {
+        width: 80%;
+        margin: auto;
+    }
+    .featured-products-content {
+        width: 30%;
+        min-height: 16em;
+        margin-left: 3%;
+        position: relative;
+        margin-bottom: 3em;
+    }
+    .latest-furniture-box {
+        position: relative;
+        margin-left: 2.5%;
+        width: 22.5%;
+    }
+    .latest-post-box {
+        width: 30%;
+        margin: 3em 1.5%;
+    }
+    .get-our-discounts-wrapper {
+        position: relative;
+        background: black;
+        display: inline-block;
+        width: 50%;
+    }
+    .get-our-discounts-wrapper::before {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        left: -10%;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: inherit;
+        -webkit-transform: skewX(-10deg);
+        -moz-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
+        transform: skewX(-10deg);
+    }
+    .get-our-discounts-content-wrapper {
+        width: 70%;
+        margin-right: 20%;
+        text-align: left;
+    }
+    .newest-collections-block {
+        width: 31%;
+        min-height: 20em;
+        margin-left: 2%;
+        margin-bottom: 2em;
+        position: relative;
+    }
+    .section-content-wrapper {
+        width: 70%;
+        margin: auto;
+        margin-top: 10em;
+        margin-bottom: 10em;
+    }
+    .contact-form {
+        width: 64%;
+        margin-left: 8.4%;
+        float: right;
+    }
+}

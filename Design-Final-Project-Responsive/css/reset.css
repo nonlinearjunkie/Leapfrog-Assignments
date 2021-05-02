@@ -2,6 +2,10 @@ html {
     font-size: 10px;
 }
 
+body {
+    overflow-x: hidden !important;
+}
+
 * {
     margin: 0;
     padding: 0;

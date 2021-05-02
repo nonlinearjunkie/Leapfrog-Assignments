@@ -1,0 +1,62 @@
+@media (min-width: 998px) {
+    .header-bottom {
+        width: 80%;
+        margin: auto;
+    }
+    .why-choose-content {
+        width: 31%;
+        margin-left: 49%;
+        margin-right: 20%;
+        margin-bottom: 12.2em;
+    }
+    .latest-posts-wrapper {
+        width: 60%;
+        margin: auto;
+        margin-top: 8em;
+    }
+    .get-our-discounts-content-wrapper {
+        width: 55%;
+        margin-right: 32%;
+        text-align: left;
+    }
+    .subscribe-btn-arrow {
+        position: absolute;
+        top: 1.6em;
+        left: 11.5em;
+    }
+    .newest-collections-content {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+    .newest-collections-menu {
+        margin-top: 3em;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1240px) {
+    .header-bottom {
+        width: 70%;
+        margin: auto;
+    }
+    .section-content-wrapper {
+        width: 49.7%;
+        margin: auto;
+        margin-top: 10em;
+        margin-bottom: 10em;
+    }
+}
+
+@media (min-width: 1440px) {
+    .header-bottom {
+        width: 60%;
+        margin: auto;
+    }
+    .newest-collections-menu {
+        margin-top: 3em;
+        width: 57%;
+        margin: auto;
+    }
+}

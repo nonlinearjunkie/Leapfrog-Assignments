@@ -114,7 +114,7 @@ p.header-cart span {
 }
 
 .header-bottom {
-    width: 60%;
+    width: 100%;
     margin: auto;
 }
 
@@ -123,6 +123,11 @@ p.header-cart span {
     padding-top: 3em;
     padding-bottom: 3em;
     text-align: center;
+}
+
+.btn-arrow>img {
+    height: 3em;
+    width: 3em;
 }
 
 
@@ -140,9 +145,10 @@ p.header-cart span {
 }
 
 .featured-products-content {
-    width: 30%;
+    width: 70%;
     min-height: 16em;
-    margin-left: 3%;
+    margin-left: 2em;
+    margin-bottom: 3em;
     position: relative;
 }
 
@@ -184,6 +190,8 @@ p.header-cart span {
     top: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    width: 10%;
+    height: auto;
 }
 
 .featured-product-right-arrow {
@@ -191,6 +199,14 @@ p.header-cart span {
     top: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    width: 10%;
+    height: auto;
+}
+
+.featured-product-left-arrow>img,
+.featured-product-right-arrow>img {
+    width: 60%;
+    height: auto;
 }
 
 
@@ -216,8 +232,9 @@ p.header-cart span {
 
 .latest-furniture-box {
     position: relative;
-    margin-left: 2.5%;
-    width: 22.5%;
+    margin: auto;
+    width: 70%;
+    margin-bottom: 3em;
     border: 1px solid #f4f4f4;
 }
 
@@ -252,9 +269,9 @@ p.header-cart span {
 /*------------->Why Choose Youniverse Section<------------------*/
 
 .why-choose-content {
-    width: 31%;
-    margin-left: 49%;
-    margin-right: 20%;
+    width: 85%;
+    margin-left: 8%;
+    margin-right: 7%;
     margin-bottom: 12.2em;
 }
 
@@ -298,8 +315,18 @@ p.header-cart span {
     transform: translate(-50%, -50%);
 }
 
+.nav-arrow>img {
+    height: 3em;
+    width: 3em;
+}
+
 .plenty-of-pages {
     margin-bottom: 9em;
+}
+
+.subscribe-btn-arrow>img {
+    height: 31px;
+    width: 31px;
 }
 
 
@@ -310,7 +337,7 @@ p.header-cart span {
 }
 
 .latest-posts-wrapper {
-    width: 60%;
+    width: 90%;
     margin: auto;
     text-align: center;
     margin-top: 8em;
@@ -328,8 +355,8 @@ p.header-cart span {
 }
 
 .latest-post-box {
-    width: 30%;
-    margin-left: 3%;
+    width: 75%;
+    margin: 2em 12.5%;
 }
 
 .latest-post-box-top-block {
@@ -381,27 +408,17 @@ p.header-cart span {
     position: relative;
     background: black;
     display: inline-block;
-    width: 50%;
+    width: 100%;
 }
 
-.get-our-discounts-wrapper::before {
-    z-index: -1;
-    content: "";
-    position: absolute;
-    left: -10%;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: inherit;
-    -webkit-transform: skewX(-10deg);
-    -moz-transform: skewX(-10deg);
-    -ms-transform: skewX(-10deg);
-    transform: skewX(-10deg);
+.discounts-input {
+    margin-bottom: 1em;
 }
 
 .get-our-discounts-content-wrapper {
-    width: 55%;
-    margin-right: 32%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
     text-align: left;
 }
 
@@ -432,6 +449,12 @@ p.header-cart span {
     position: relative;
 }
 
+.subscribe-btn-arrow {
+    position: absolute;
+    top: 1.6em;
+    left: 12em;
+}
+
 
 /*------------->Newest Collection Section<------------------*/
 
@@ -440,7 +463,7 @@ p.header-cart span {
 }
 
 .newest-collections-content {
-    width: 60%;
+    width: 90%;
     margin: auto;
     text-align: center;
 }
@@ -454,7 +477,7 @@ p.header-cart span {
 
 .newest-collections-menu {
     margin-top: 3em;
-    width: 57%;
+    width: 100%;
     margin: auto;
 }
 
@@ -469,9 +492,9 @@ p.header-cart span {
 }
 
 .newest-collections-block {
-    width: 31%;
+    width: 92%;
     min-height: 20em;
-    margin-left: 2%;
+    margin-left: 4%;
     margin-bottom: 2em;
     position: relative;
 }
@@ -502,7 +525,7 @@ p.header-cart span {
 }
 
 .section-content-wrapper {
-    width: 49.7%;
+    width: 90%;
     margin: auto;
     margin-top: 10em;
     margin-bottom: 10em;
@@ -521,8 +544,10 @@ p.header-cart span {
 }
 
 .contact-form {
-    width: 64%;
-    margin-left: 8.4%;
+    width: 80%;
+    margin-left: 0.3em;
+    float: left;
+    margin-top: 2em;
 }
 
 .contact-form-input {
