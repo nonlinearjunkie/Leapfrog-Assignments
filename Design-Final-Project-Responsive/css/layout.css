@@ -501,7 +501,6 @@ p.header-cart span {
 
 .contact {
     margin-top: 8em;
-    background-color: #f4f4f4;
     overflow: auto;
 }
 
@@ -536,13 +535,15 @@ p.header-cart span {
     width: 100%;
 }
 
+.contact-form-input::placeholder {
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
 .contact-form-submit {
     display: block;
     min-height: 3em;
     width: 26.6%;
-    border: none;
-    background-color: black;
-    color: white;
 }
 
 .contact-form-message {

@@ -19,7 +19,7 @@
     font-weight: 400;
 }
 
-.more-details-btn span {
+.btn span {
     font-family: "Lato- Bold ", sans-serif;
     font-weight: 700;
 }
@@ -424,4 +424,45 @@ p.header-cart span {
 .block-content-details {
     color: #ffffff;
     font-size: 1.3em;
+}
+
+
+/*------------->Contact Section<------------------*/
+
+.contact {
+    font-family: "Lato", sans-serif;
+    color: #1c1105;
+    font-weight: 400;
+    background-color: #f7f7f7;
+}
+
+.contact-heading {
+    font-size: 2.4em;
+    font-weight: 400;
+}
+
+.contact-desc {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.contact-info-heading {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.contact-info-para {
+    font-size: 1.3em;
+}
+
+.contact-form-input {
+    background-color: #f7f7f7;
+    border: 1px solid #dadada;
+}
+
+.contact-form-input::placeholder {
+    color: #c0c0c0;
+    font-family: "Lato", sans-serif;
+    font-size: 1.3em;
+    font-weight: 400;
 }
