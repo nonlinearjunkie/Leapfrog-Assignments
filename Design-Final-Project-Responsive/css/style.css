@@ -146,7 +146,7 @@ p.header-cart span {
 
 .latest-furniture-box-heading {
     font-family: "Lato", sans-serif;
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: 700;
     color: #1c1105;
 }
@@ -154,7 +154,7 @@ p.header-cart span {
 .latest-furniture-box-content {
     color: #9c9c9c;
     font-family: "Lato", sans-serif;
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: 400;
     line-height: 2em;
 }
@@ -363,4 +363,65 @@ p.header-cart span {
     padding: 0.6em 2em;
     border: none;
     text-align: center;
+}
+
+
+/*------------->Newest Collection Section<------------------*/
+
+.newest-collections {
+    font-family: "Lato", sans-serif;
+    color: #1c1105;
+    font-weight: 400;
+}
+
+.newest-collections-heading {
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.newest-collections-hr {
+    height: 3px;
+    color: #e7e7e7;
+    border-width: 0;
+    background-color: #e7e7e7;
+}
+
+.newest-collection-menu-items {
+    border: 1px solid #d5d5d5;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.newest-collection-menu-items:hover {
+    color: #ffffff;
+    background-color: #fac012;
+    cursor: pointer;
+    border: 0;
+}
+
+.newest-collections-block {
+    background-color: #f6f6f6;
+}
+
+.newest-collections-block:hover {
+    cursor: pointer;
+    background-color: #fac012;
+    opacity: 0.9;
+}
+
+.block-content-heading {
+    color: #ffffff;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.block-content-price {
+    color: #ffffff;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.block-content-details {
+    color: #ffffff;
+    font-size: 1.3em;
 }
