@@ -603,6 +603,7 @@ footer {
     position: absolute;
     left: 50%;
     top: 50%;
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -642,6 +643,20 @@ footer {
 .footer-block-left-image {
     width: 6em;
     height: 6em;
+    position: relative;
+}
+
+.footer-block-details-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.footer-block-left-image:hover .footer-block-details-btn {
+    display: initial;
 }
 
 .footer-block-rating {

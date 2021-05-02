@@ -540,6 +540,12 @@ footer {
     background-color: #44301a;
 }
 
+.footer-block-left-image:hover {
+    background-color: #fac012;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
 .footer-block-name {
     color: #5d5144;
     font-size: 1.4em;
