@@ -1,9 +1,6 @@
 /*------------->header<------------------*/
 
-button:hover {
-    cursor: pointer;
-}
-
+button:hover,
 a:hover {
     cursor: pointer;
 }

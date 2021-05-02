@@ -84,6 +84,15 @@ p.header-cart span {
     font-weight: 700;
 }
 
+.left-arrow:hover,
+.right-arrow:hover {
+    cursor: pointer;
+}
+
+.header-icons img:hover {
+    cursor: pointer;
+}
+
 
 /*------------->Featured Products Section<------------------*/
 
