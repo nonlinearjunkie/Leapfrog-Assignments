@@ -118,6 +118,10 @@ p.header-cart span {
     margin: auto;
 }
 
+nav {
+    display: none;
+}
+
 .nav-items {
     width: 14.28%;
     padding-top: 3em;
@@ -479,6 +483,10 @@ p.header-cart span {
     margin-top: 3em;
     width: 100%;
     margin: auto;
+}
+
+.newest-collections-menu {
+    display: none;
 }
 
 .newest-collection-menu-items {

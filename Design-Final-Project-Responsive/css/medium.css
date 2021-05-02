@@ -27,6 +27,24 @@
     }
 }
 
+@media (min-width: 587px) {
+    .newest-collections-menu {
+        display: initial;
+    }
+    .collection-dropdown {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) {
+    nav {
+        display: initial;
+    }
+    .nav-dropdown {
+        display: none;
+    }
+}
+
 @media (min-width: 768px) {
     .header-bottom {
         width: 80%;
