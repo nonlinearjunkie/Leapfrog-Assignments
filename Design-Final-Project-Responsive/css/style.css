@@ -466,3 +466,104 @@ p.header-cart span {
     font-size: 1.3em;
     font-weight: 400;
 }
+
+
+/*------------->Footer Section<------------------*/
+
+footer {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    background-color: #1c1105;
+}
+
+.footer-left {
+    color: #5d5144;
+}
+
+.about-us-footer {
+    font-size: 1.3em;
+}
+
+.read-more-text {
+    color: #fac012;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.read-more-footer:hover {
+    cursor: pointer;
+}
+
+.follow-us-seperator-container {
+    height: 1px;
+    background-color: #281909;
+}
+
+.follow-us-seperator {
+    border-width: 0;
+}
+
+.icon-container {
+    background-color: #5d5144;
+}
+
+.social-media-top-desc {
+    color: #776a5c;
+    font-size: 1.3em;
+}
+
+.social-media-bottom-desc {
+    color: #5d5144;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.social-media-bottom-desc:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.latest-products-heading,
+.instagram-feed-heading,
+.top-sellers-heading {
+    color: #ffffff;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.footer-hr {
+    border-width: 0;
+    background-color: #fac012;
+}
+
+.footer-block-left-image {
+    background-color: #44301a;
+}
+
+.footer-block-name {
+    color: #5d5144;
+    font-size: 1.4em;
+}
+
+.initial-price {
+    color: #5d5144;
+    font-size: 1.3em;
+    text-decoration: line-through;
+}
+
+.final-price {
+    color: #fac012;
+    font-size: 1.5em;
+}
+
+.footer-bottom-hr {
+    height: 0.1em;
+    border-width: 0;
+    background-color: #281909;
+}
+
+.copyright {
+    color: #5d5144;
+    font-size: 1em;
+    font-weight: 400;
+}
