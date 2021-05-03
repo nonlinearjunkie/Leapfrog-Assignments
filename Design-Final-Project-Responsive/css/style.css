@@ -1,9 +1,5 @@
 /*------------->header<------------------*/
 
-.header-top {
-    background-color: #dfdfdf;
-}
-
 .header-bottom-wrapper {
     background-color: black;
 }
@@ -20,6 +16,29 @@
 }
 
 .btn span {
+    font-family: "Lato- Bold ", sans-serif;
+    font-weight: 700;
+}
+
+.header-top-wrapper {
+    background-color: #dfdfdf;
+}
+
+.header-bottom-wrapper {
+    background-color: black;
+}
+
+.header-btn {
+    background-color: #1c1105;
+    width: 100%;
+    color: #ffffff;
+    font-size: 1em;
+    border: none;
+    font-family: "Lato - Regular", sans-serif;
+    font-weight: 400;
+}
+
+.header-btn span {
     font-family: "Lato- Bold ", sans-serif;
     font-weight: 700;
 }
@@ -61,10 +80,6 @@ p.header-cart span {
     font-size: 0.35em;
 }
 
-.featured-products-container {
-    border: 0.5em solid #fac012;
-}
-
 .featured-products-top-container {
     border-bottom: 2px solid black;
 }
@@ -95,6 +110,34 @@ p.header-cart span {
 }
 
 .header-icons img:hover {
+    cursor: pointer;
+}
+
+.nav-menu {
+    background-color: #010101;
+    color: white;
+}
+
+.nav-items {
+    color: #ffffff;
+    font-family: "Lato - Regular", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.nav-items:hover {
+    color: #fac012;
+    cursor: pointer;
+}
+
+.nav-items:hover::after {
+    margin-left: 0.3rem;
+    content: url("../images/hover_arrow.png");
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
     cursor: pointer;
 }
 

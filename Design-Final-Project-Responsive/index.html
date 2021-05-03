@@ -18,26 +18,38 @@
 <body>
     <header>
         <a name="top"></a>
-        <div class="header-top clearfix">
-            <div class="logo-container left">
-                <a href="#">
-                    <img src="images/logo.png" alt="Logo" />
-                </a>
-            </div>
-            <div class="header-top-right right clearfix">
-                <div class="featured-products-container left">
+        <div class="header-top-wrapper">
+            <div class="header-top">
+                <div class="logo-and-nav clearfix">
+                    <div class="header-logo-container left">
+                        <img src="images/logo.png" alt="Logo" class="logo" />
+                    </div>
+                    <div class="header-nav-container right">
+                        <div class="search header-icons left">
+                            <img src="images/search.png" alt="Search" class="search-icon" />
+                        </div>
+                        <div class="cart header-icons left clearfix">
+                            <img src="images/Cart-header.png" class="cart-icon" alt="Cart" />
+                        </div>
+                        <div class="hamburger-menu header-icons left">
+                            <img src="images/hamburgerMenu.png" alt="Hamburger Menu" class="hamburger-icon" />
+                        </div>
+                    </div>
+                </div>
+                <div class="header-top-content relative">
                     <div class="left-arrow absolute">
                         <img src="images/left.png" alt="Left Arrow" />
                     </div>
                     <div class="right-arrow absolute">
                         <img src="images/right.png" alt="Right Arrow" />
                     </div>
+
                     <div class="featured-products-top-container clearfix">
                         <h3 class="featured-products-heading left">Featured Products</h3>
-                        <div class="more-details-btn btn-container right">
-                            <button class="btn">More<span> Details </span></button>
-                            <div class="btn-arrow">
-                                <img src="images/btn_arrow.png" alt="Button Arrow" />
+                        <div class="more-details-btn-header right">
+                            <button class="header-btn">More<span> Details </span></button>
+                            <div class="header-btn-arrow">
+                                <img src="images/btn_arrow.png" alt="Button Arrow" class="header-btn-arrow" />
                             </div>
                         </div>
                     </div>
@@ -75,18 +87,6 @@
                                 <p class="featured-products-desc-bottom">Brown,Black,White</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="search-and-cart right clearfix">
-                    <div class="search header-icons left">
-                        <img src="images/search.png" alt="Search" />
-                    </div>
-                    <div class="cart header-icons left clearfix">
-                        <img src="images/cart-header.png" class="left" alt="Cart" />
-                        <p class="header-cart left">00 <span>ITEMS</span></p>
-                    </div>
-                    <div class="hamburger-menu header-icons left">
-                        <img src="images/hamburgerMenu.png" alt="Hamburger Menu" />
                     </div>
                 </div>
             </div>
