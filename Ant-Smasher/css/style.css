@@ -7,3 +7,8 @@
     float: right;
     margin-right: 20%;
 }
+
+.info h2,
+.info h1 {
+    display: inline-block;
+}
