@@ -4,8 +4,8 @@
 }
 
 #main-container {
-    width: 800px;
-    height: 500px;
+    width: 1000px;
+    height: 600px;
     border: solid 3px red;
     margin: auto;
     position: relative;

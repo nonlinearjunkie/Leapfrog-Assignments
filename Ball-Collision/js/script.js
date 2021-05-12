@@ -1,11 +1,11 @@
-const ballMinSize = 15;
-const ballMaxSize = 40;
+const ballMinSize = 5;
+const ballMaxSize = 15;
 var directionArray = [-1, 1];
 var balls = [];
 const speed = 12;
 
-const CONTAINER_WIDTH = 800;
-const CONTAINER_HEIGHT = 500;
+const CONTAINER_WIDTH = 1000;
+const CONTAINER_HEIGHT = 600;
 
 const BALL_CONSTRAINT_X = CONTAINER_WIDTH - ballMaxSize;
 const BALL_CONSTRAINT_Y = CONTAINER_HEIGHT - ballMaxSize;
@@ -148,4 +148,4 @@ function Game(ballNum) {
   };
 }
 
-new Game(15).init();
+new Game(70).init();
