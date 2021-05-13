@@ -152,6 +152,8 @@ function Game(parentElement) {
 
   this.parentElement = parentElement;
   this.AltScreen = parentElement.querySelector(".welcome-screen");
+  this.startButton = document.getElementById("start-button");
+  console.log(this.startButton);
   this.gameArea = parentElement.querySelector(".app");
   this.highway = null;
   this.gameCounter = 0;
@@ -159,7 +161,7 @@ function Game(parentElement) {
   var that = this;
 
   this.init = function () {
-    this.AltScreen.addEventListener("click", this.start.bind(this));
+    this.startButton.addEventListener("click", this.start.bind(this));
 
     this.highScore = localStorage.getItem("carGameHighScore")
       ? JSON.parse(localStorage.getItem("carGameHighScore"))
@@ -174,6 +176,7 @@ function Game(parentElement) {
     player.start = true;
 
     this.AltScreen.classList.add("hide");
+    this.startButton.classList.add("hide");
     this.gameArea.classList.remove("hide");
     this.gameArea.focus();
     this.highway.init();

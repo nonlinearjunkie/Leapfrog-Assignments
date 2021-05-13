@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Car Game</title>
 </head>
@@ -12,10 +13,19 @@
 <body>
     <div class="car-game-2d" id="gameArena">
         <div class="welcome-screen">
-            <h2>Welcome To The Car Game</h2>
-            <p>Arrow Keys to Move left/right and Enter To SHOOT</p>
-            <h3>Click To HERE TO Start the Game</h3>
+            <h2 class="welcome-heading">Welcome To The Car Game</h2>
+            <h3 class="instructions-heading">Instructions</h3>
+            <ul class="instructions-list">
+                <li class="instructions-list-item">Press Left Arrow to move Left</li>
+                <li class="instructions-list-item">
+                    Press Right Arrow To move Right
+                </li>
+                <li class="instructions-list-item">Press Enter to fire a bullet!</li>
+            </ul>
         </div>
+
+        <button id="start-button">Start</button>
+
         <div class="app hide" id="app" tabindex="0">
             <img src="images/highway-l.jpg" class="highway-image" alt="Highway-image" />
             <img src="images/highway-l.jpg" class="highway-image" alt="Highway Image" />
