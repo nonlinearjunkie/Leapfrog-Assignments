@@ -1,0 +1,11 @@
+.header-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.header-logo {
+    padding-top: 20px;
+    padding-bottom: 8px;
+    width: 150px;
+    height: auto;
+}
