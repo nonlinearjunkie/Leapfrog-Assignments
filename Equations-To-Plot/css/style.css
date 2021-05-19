@@ -5,3 +5,11 @@ body {
 header {
     background-color: #f5f5f5;
 }
+
+.function-type-li {
+    font-family: "Questrial", sans-serif;
+    font-size: 25px;
+    background-color: #1c1105;
+    color: #ffffff;
+    border: none;
+}

@@ -9,3 +9,17 @@
     width: 150px;
     height: auto;
 }
+
+.left {
+    float: left;
+}
+
+.function-types-ul {
+    width: 70%;
+    margin: 30px auto;
+}
+
+.function-type-li {
+    margin: 40px 60px;
+    padding: 25px 40px;
+}
