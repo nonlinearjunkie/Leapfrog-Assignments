@@ -20,7 +20,14 @@ class HomeDisplay {
       functionTypeElement.innerText = functionTypeObj.functionName;
       functionTypeElement.addEventListener("click", function () {
         console.log(functionTypeObj);
-        functionTypeObj.renderFunctionTypes();
+
+        if (functionTypeObj.functionObjectsArray !== undefined) {
+          //render subclasses of a Function Type if it has subclasses
+          functionTypeObj.renderFunctionTypes();
+        } else {
+          //directly render the plot of a function type if it does not have subclasses
+          functionTypeObj.renderPlot();
+        }
       });
       functionTypesList.appendChild(functionTypeElement);
     });

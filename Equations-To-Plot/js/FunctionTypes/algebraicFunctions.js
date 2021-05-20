@@ -1,33 +1,6 @@
 class AlgebraicFunctions extends Function {
-  constructor(functionName, algebraicFunctionObjectsArray) {
-    super(functionName);
-    this.algebraicFunctionObjectsArray = algebraicFunctionObjectsArray;
-  }
-
-  //render all the types of algebraic functions
-  renderFunctionTypes() {
-    console.log("Algebraic Functions rTypes");
-    let contentsArray = this.algebraicFunctionObjectsArray;
-    let mainContainer = document.getElementById("container");
-    mainContainer.innerHTML = ""; //Empty the section container
-    let algebraicFunctionObjectsContainer = document.createElement("div");
-    let algebraicFunctionObjectsList = document.createElement("ul");
-
-    algebraicFunctionObjectsList.setAttribute(
-      "class",
-      " function-types-ul clearfix"
-    );
-
-    mainContainer.appendChild(algebraicFunctionObjectsContainer);
-    algebraicFunctionObjectsContainer.appendChild(algebraicFunctionObjectsList);
-
-    contentsArray.forEach(function (algebraicFcnObj) {
-      console.log(algebraicFcnObj.functionName);
-      let algebraicFcnElement = document.createElement("li");
-      algebraicFcnElement.setAttribute("class", "function-type-li left");
-      algebraicFcnElement.innerText = algebraicFcnObj.functionName;
-      algebraicFunctionObjectsList.appendChild(algebraicFcnElement);
-    });
+  constructor(functionName, functionObjectsArray) {
+    super(functionName, functionObjectsArray);
   }
 }
 
