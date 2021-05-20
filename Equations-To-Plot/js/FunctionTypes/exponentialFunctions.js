@@ -1,4 +1,4 @@
-class ExpenentialFunctions extends Function {
+class ExponentialFunctions extends Function {
   constructor(functionName) {
     super(functionName);
   }

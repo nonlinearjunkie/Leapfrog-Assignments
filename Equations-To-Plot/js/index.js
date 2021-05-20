@@ -15,8 +15,8 @@ let algebraicFcnObj = new AlgebraicFunctions("Algebraic", [
 
 //Trigonometric Functions SubClasses
 let sineObj = new SineFunction("sine", 1, 1, 0, 0);
-let cosineObj = new SineFunction("cosine", 1, 1, 0, 0);
-let tangentObj = new SineFunction("tangent", 1, 1, 0, 0);
+let cosineObj = new CosineFunction("cosine", 1, 1, 0, 0);
+let tangentObj = new TangentFunction("tangent", 1, 1, 0, 0);
 
 //Trigonometric Function Object with  SubClasses
 
@@ -26,17 +26,29 @@ let trigonometricFcnObj = new TrigonoMetricFunctions("Trigonometric", [
   tangentObj,
 ]);
 
-let exponentialFcnObj = new ExpenentialFunctions("Exponential");
+//Trigonometric Functions SubClasses
+let sinhObj = new SinhFunction("sinh", 1, 1);
+let coshObj = new CoshFunction("cosh", 1, 1);
+let tanhObj = new TanhFunction("tangent", 1, 1);
+
+//Hyperbolic Function Object with  SubClasses
+let hyperbolicFcnObj = new HyperbolicFunctions("Hyperbolic", [
+  sinhObj,
+  coshObj,
+  tanhObj,
+]);
+
+let exponentialFcnObj = new ExponentialFunctions("Exponential");
 let logarithmicFcnObj = new LogarithmicFunctions("Logarithmic");
-let hyperbolicFcnObj = new HyperbolicFunctions("Hyperbolic");
+
 let gaussianFunctionObj = new GaussianFunctions("Gaussian PDF");
 
 let homeDisplayObj = new HomeDisplay([
   algebraicFcnObj,
   trigonometricFcnObj,
+  hyperbolicFcnObj,
   exponentialFcnObj,
   logarithmicFcnObj,
-  hyperbolicFcnObj,
   gaussianFunctionObj,
 ]);
 
