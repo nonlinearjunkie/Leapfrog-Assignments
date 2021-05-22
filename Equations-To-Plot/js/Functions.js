@@ -26,6 +26,10 @@ class Function {
       fcnObjectElement.setAttribute("class", "function-type-li left");
       fcnObjectElement.innerText = fcnObject.functionName;
       functionObjectsList.appendChild(fcnObjectElement);
+      fcnObjectElement.addEventListener(
+        "click",
+        fcnObject.renderPlot.bind(fcnObject)
+      );
     });
   }
 

@@ -1,8 +1,8 @@
 //Algebraic Functions SubClasses
-let constantAlgebraicObj = new Constant("Constant", 4);
-let linearAlgebraicObj = new Linear("Linear", 4, 5);
+let constantAlgebraicObj = new Constant("Constant", -10);
+let linearAlgebraicObj = new Linear("Linear", 1, -5);
 let quadraticAlgebraicObj = new Quadratic("Quadratic", 4, 5, 6);
-let cubicAlgebraicObj = new Cubic("Cubic", 4, 5, 6, 7);
+let cubicAlgebraicObj = new Cubic("Cubic", 4, 5, 6, 9);
 
 //Algebraic Function Object with  SubClasses
 

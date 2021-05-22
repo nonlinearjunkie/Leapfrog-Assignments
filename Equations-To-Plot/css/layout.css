@@ -23,3 +23,10 @@
     margin: 40px 60px;
     padding: 25px 40px;
 }
+
+.plot-container {
+    width: 760px;
+    padding: 20px 30px;
+    margin: 10px auto;
+    border: 3px solid #a22;
+}
