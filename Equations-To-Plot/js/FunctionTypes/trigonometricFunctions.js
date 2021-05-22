@@ -147,13 +147,12 @@ class TangentFunction extends TrigonometricFunctionType {
     let b = this.b;
     let h = this.h;
     let k = this.k;
-    console.log("Sine Trigonomteric Function Rendered");
-    console.log(this);
+    console.log("Tangent Trigonomteric Function Rendered");
     this.renderPlotOutline();
 
-    var canvas = document.querySelector("canvas");
-    var cntxt = canvas.getContext("2d");
-    cntxt.beginPath();
+    let canvas = document.querySelector("canvas");
+    let cntxt = canvas.getContext("2d");
+    let isBeginPath = true; //flag to check if we need to create a seperate line as tangen curve has several discontinuities
 
     for (let i = -canvas.width / 20; i < canvas.width / 20; i += 0.1) {
       let x_cord = i;
@@ -162,13 +161,24 @@ class TangentFunction extends TrigonometricFunctionType {
       //Translate the points so that (0,0) lies at centre
       let xCordTranslated = canvas.width / 2 + xCordScaled;
 
-      let y_cord = A * Math.tan(b * (i + h)) + k;
-      let yCordScaled = y_cord * 10;
-      let yCordTranslated = canvas.height / 2 - yCordScaled;
+      let cosineValue = A * Math.cos(b * (i + h)) + k; //calculate cosine value to check value of tangent is infinite
 
-      cntxt.lineTo(xCordTranslated, yCordTranslated);
+      if (Math.abs(cosineValue) <= 6.12e-10) {
+        isBeginPath = true; //complete the stroke and strat new stroke once we have very high value(tends to infinite)
+        cntxt.strokeStyle = "black";
+        cntxt.stroke();
+      } else {
+        if (isBeginPath) {
+          cntxt.beginPath();
+        }
+
+        let y_cord = A * Math.tan(b * (i + h)) + k;
+        let yCordScaled = y_cord * 10;
+        let yCordTranslated = canvas.height / 2 - yCordScaled;
+        cntxt.lineTo(xCordTranslated, yCordTranslated);
+        isBeginPath = false;
+      }
     }
-
     cntxt.strokeStyle = "black";
     cntxt.stroke();
   }
