@@ -45,7 +45,7 @@ class ExponentialFunctions extends Function {
   }
 
   renderPlot() {
-    //exponential plots only exist for positive numbers
+    //exponential plots only exist for positive bases
     if (this.base > 0) {
       console.log("Plot of exponential function");
 
@@ -89,7 +89,9 @@ class ExponentialFunctions extends Function {
       cntxt.strokeStyle = "black";
       cntxt.stroke();
     } else {
-      console.log("Exponential Plots are undefined for negative base values");
+      console.log(
+        "Exponential Plots are only defined for positive base values"
+      );
     }
   }
 }

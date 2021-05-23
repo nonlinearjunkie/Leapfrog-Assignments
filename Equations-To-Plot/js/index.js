@@ -39,9 +39,9 @@ let hyperbolicFcnObj = new HyperbolicFunctions("Hyperbolic", [
 ]);
 
 let exponentialFcnObj = new ExponentialFunctions("Exponential", -0.1);
-let logarithmicFcnObj = new LogarithmicFunctions("Logarithmic");
+let logarithmicFcnObj = new LogarithmicFunctions("Logarithmic", 2);
 
-let gaussianFunctionObj = new GaussianFunctions("Gaussian PDF");
+let gaussianFunctionObj = new GaussianFunctions("Gaussian PDF", 10, 6);
 
 let homeDisplayObj = new HomeDisplay([
   algebraicFcnObj,
