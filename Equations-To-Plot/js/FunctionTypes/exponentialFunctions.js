@@ -45,36 +45,51 @@ class ExponentialFunctions extends Function {
   }
 
   renderPlot() {
-    console.log("Plot of exponential function");
+    //exponential plots only exist for positive numbers
+    if (this.base > 0) {
+      console.log("Plot of exponential function");
 
-    this.renderPlotOutline();
+      this.renderPlotOutline();
 
-    var canvas = document.querySelector("canvas");
-    var cntxt = canvas.getContext("2d");
-    cntxt.beginPath();
+      var canvas = document.querySelector("canvas");
+      var cntxt = canvas.getContext("2d");
+      cntxt.beginPath();
 
-    for (let i = -canvas.width / 40; i < canvas.width / 40; i += 0.1) {
-      let x_cord = i;
-      //Scale the points
-      let xCordScaled = x_cord * 20;
-      //Translate the points so that (0,0) lies at centre
-      let xCordTranslated = canvas.width / 2 + xCordScaled;
+      //The very high base and very low base will have high values of extreme points. To fit the points, we scale them heavily
+      if (this.base >= 4 || this.base <= 0.3) {
+        for (let i = -canvas.width / 60; i < canvas.width / 60; i += 0.01) {
+          let x_cord = i;
+          //Scale the points
+          let xCordScaled = x_cord * 30;
+          //Translate the points so that (0,0) lies at centre
+          let xCordTranslated = canvas.width / 2 + xCordScaled;
 
-      let y_cord = this.base ** i;
-      if (this.base >= 1) {
-        let yCordScaled = y_cord * 0.01;
-        let yCordTranslated = canvas.height / 2 - yCordScaled;
-        console.log(xCordScaled, yCordScaled);
-        cntxt.lineTo(xCordTranslated, yCordTranslated);
+          let y_cord = this.base ** i;
+
+          let yCordScaled = y_cord * 0.001;
+          let yCordTranslated = canvas.height / 2 - yCordScaled;
+          cntxt.lineTo(xCordTranslated, yCordTranslated);
+        }
       } else {
-        let yCordScaled = y_cord * 0.01;
-        let yCordTranslated = canvas.height / 2 - yCordScaled;
-        console.log(xCordScaled, yCordScaled);
-        cntxt.lineTo(xCordTranslated, yCordTranslated);
-      }
-    }
+        for (let i = -canvas.width / 40; i < canvas.width / 40; i += 0.1) {
+          let x_cord = i;
+          //Scale the points
+          let xCordScaled = x_cord * 20;
+          //Translate the points so that (0,0) lies at centre
+          let xCordTranslated = canvas.width / 2 + xCordScaled;
 
-    cntxt.strokeStyle = "black";
-    cntxt.stroke();
+          let y_cord = this.base ** i;
+
+          let yCordScaled = y_cord * 0.01;
+          let yCordTranslated = canvas.height / 2 - yCordScaled;
+          cntxt.lineTo(xCordTranslated, yCordTranslated);
+        }
+      }
+
+      cntxt.strokeStyle = "black";
+      cntxt.stroke();
+    } else {
+      console.log("Exponential Plots are undefined for negative base values");
+    }
   }
 }
