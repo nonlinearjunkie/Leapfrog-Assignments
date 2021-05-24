@@ -38,7 +38,7 @@ let hyperbolicFcnObj = new HyperbolicFunctions("Hyperbolic", [
   tanhObj,
 ]);
 
-let exponentialFcnObj = new ExponentialFunctions("Exponential", -0.1);
+let exponentialFcnObj = new ExponentialFunctions("Exponential", 2);
 let logarithmicFcnObj = new LogarithmicFunctions("Logarithmic", 2);
 
 let gaussianFunctionObj = new GaussianFunctions("Gaussian PDF", 10, 6);

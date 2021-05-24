@@ -24,10 +24,14 @@
     padding: 25px 40px;
 }
 
-.plot-container {
+.plot-div {
     width: 760px;
     padding: 20px 30px;
     margin-top: 20px;
-    margin-left: 10%;
     border: 3px solid #a22;
+}
+
+.plot-container {
+    margin-left: 8%;
+    width: 760px;
 }

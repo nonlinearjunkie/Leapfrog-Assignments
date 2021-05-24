@@ -16,6 +16,10 @@ header {
 
 .plotHeading {
     font-family: "EB Garamond", serif;
-    margin-left: 20%;
+    text-align: center;
     font-size: 30px;
+}
+
+.plot-div {
+    border: 3px solid #a22;
 }

@@ -37,22 +37,27 @@ class HyperbolicFunctionType {
 
   renderPlotOutline() {
     let mainContainer = document.getElementById("container");
+    mainContainer.setAttribute("class", "clearfix");
     let plotContainer = document.createElement("div");
+    plotContainer.setAttribute("class", "plot-container left");
     mainContainer.innerHTML = "";
 
     let plotContainerHeading = document.createElement("div");
     plotContainerHeading.setAttribute("class", "plotHeading");
     plotContainerHeading.innerHTML = `<h3> Plot of ${this.functionName} Function</h3>`;
-    mainContainer.appendChild(plotContainerHeading);
+    plotContainer.appendChild(plotContainerHeading);
 
+    let plotDiv = document.createElement("div");
     let canvasElement = document.createElement("canvas");
     canvasElement.width = 700;
     canvasElement.height = 700;
-    plotContainer.appendChild(canvasElement);
-    plotContainer.setAttribute("class", "plot-container");
+
+    plotDiv.appendChild(canvasElement);
+    plotContainer.appendChild(plotDiv);
+
+    plotDiv.setAttribute("class", "plot-div");
     mainContainer.appendChild(plotContainer);
 
-    console.log(canvasElement);
     this.drawXAxis();
     this.drawYAxis();
   }
