@@ -37,9 +37,15 @@ class AlgebraicFunctionType {
     let plotContainer = document.createElement("div");
     mainContainer.innerHTML = "";
 
+    let plotContainerHeading = document.createElement("div");
+    plotContainerHeading.setAttribute("class", "plotHeading");
+    plotContainerHeading.innerHTML = `<h3> Plot of ${this.functionName} Algebraic Function</h3>`;
+    mainContainer.appendChild(plotContainerHeading);
+
     let canvasElement = document.createElement("canvas");
     canvasElement.width = 700;
     canvasElement.height = 700;
+
     plotContainer.appendChild(canvasElement);
     plotContainer.setAttribute("class", "plot-container");
     mainContainer.appendChild(plotContainer);

@@ -27,6 +27,7 @@
 .plot-container {
     width: 760px;
     padding: 20px 30px;
-    margin: 10px auto;
+    margin-top: 20px;
+    margin-left: 10%;
     border: 3px solid #a22;
 }

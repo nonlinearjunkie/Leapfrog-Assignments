@@ -13,3 +13,9 @@ header {
     color: #ffffff;
     border: none;
 }
+
+.plotHeading {
+    font-family: "EB Garamond", serif;
+    margin-left: 20%;
+    font-size: 30px;
+}

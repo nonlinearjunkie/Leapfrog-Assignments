@@ -32,12 +32,4 @@ class Function {
       );
     });
   }
-
-  renderPlot() {
-    let mainContainer = document.getElementById("container");
-    mainContainer.innerHTML = ""; //Empty the section container
-    let plotContainer = document.createElement("div");
-    plotContainer.innerHTML = `<h3> Plot of ${this.functionName}</h3>`;
-    mainContainer.appendChild(plotContainer);
-  }
 }

@@ -42,6 +42,11 @@ class TrigonometricFunctionType {
     let plotContainer = document.createElement("div");
     mainContainer.innerHTML = "";
 
+    let plotContainerHeading = document.createElement("div");
+    plotContainerHeading.setAttribute("class", "plotHeading");
+    plotContainerHeading.innerHTML = `<h3> Plot of ${this.functionName} Function</h3>`;
+    mainContainer.appendChild(plotContainerHeading);
+
     let canvasElement = document.createElement("canvas");
     canvasElement.width = 700;
     canvasElement.height = 700;
