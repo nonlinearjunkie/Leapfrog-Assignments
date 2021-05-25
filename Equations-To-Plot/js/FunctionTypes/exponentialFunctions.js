@@ -54,54 +54,145 @@ class ExponentialFunctions extends Function {
     this.drawYAxis();
   }
 
-  renderPlot() {
-    //exponential plots only exist for positive bases
-    if (this.base > 0) {
-      console.log("Plot of exponential function");
+  showSliders(sliderDivArray) {
+    let mainContainer = document.getElementById("container");
+    let sliderContainer = document.createElement("div");
+    sliderContainer.setAttribute("class", "slider-container left");
 
-      this.renderPlotOutline();
+    let sliderHeading = document.createElement("div");
+    sliderHeading.setAttribute("class", "sliderHeading");
+    sliderHeading.innerHTML = `<h3> Slider Controls</h3>`;
+    sliderContainer.appendChild(sliderHeading);
 
-      var canvas = document.querySelector("canvas");
-      var cntxt = canvas.getContext("2d");
-      cntxt.beginPath();
+    sliderDivArray.forEach(function (sliderDiv) {
+      sliderContainer.appendChild(sliderDiv);
+    });
 
-      //The very high base and very low base will have high values of extreme points. To fit the points, we scale them heavily
-      if (this.base >= 4 || this.base <= 0.3) {
-        for (let i = -canvas.width / 60; i < canvas.width / 60; i += 0.01) {
-          let x_cord = i;
-          //Scale the points
-          let xCordScaled = x_cord * 30;
-          //Translate the points so that (0,0) lies at centre
-          let xCordTranslated = canvas.width / 2 + xCordScaled;
+    mainContainer.appendChild(sliderContainer);
+  }
 
-          let y_cord = this.base ** i;
+  //Method to create Info about SLider-name and value
+  //Takes name for slider and associated property(Value of object property associated with slider)
 
-          let yCordScaled = y_cord * 0.001;
-          let yCordTranslated = canvas.height / 2 - yCordScaled;
-          cntxt.lineTo(xCordTranslated, yCordTranslated);
-        }
-      } else {
-        for (let i = -canvas.width / 40; i < canvas.width / 40; i += 0.1) {
-          let x_cord = i;
-          //Scale the points
-          let xCordScaled = x_cord * 20;
-          //Translate the points so that (0,0) lies at centre
-          let xCordTranslated = canvas.width / 2 + xCordScaled;
+  createSliderInfo(sliderName, associatedProperty) {
+    let sliderDivInfo = document.createElement("div"); //container for slider heading and value
+    sliderDivInfo.setAttribute("class", "slider-div-info clearfix");
 
-          let y_cord = this.base ** i;
+    let sliderDivHeading = document.createElement("div");
+    sliderDivHeading.innerHTML = `<h4>${sliderName}</h4>`;
+    sliderDivHeading.setAttribute("class", "slider-div-heading left");
+    sliderDivInfo.appendChild(sliderDivHeading);
 
-          let yCordScaled = y_cord * 0.01;
-          let yCordTranslated = canvas.height / 2 - yCordScaled;
-          cntxt.lineTo(xCordTranslated, yCordTranslated);
-        }
+    let silderDivValue = document.createElement("div");
+    silderDivValue.innerHTML = `<p> Value: ${associatedProperty}`;
+    silderDivValue.setAttribute("class", "slider-div-value left");
+    sliderDivInfo.appendChild(silderDivValue);
+
+    return sliderDivInfo;
+  }
+
+  //method to create slider Input
+  createSliderElement(id, minValue, maxValue, stepSize, associatedProperty) {
+    let sliderInput = document.createElement("input");
+    sliderInput.setAttribute("class", "slider");
+    sliderInput.setAttribute("type", "range");
+    sliderInput.setAttribute("id", id);
+    sliderInput.setAttribute("min", minValue);
+    sliderInput.setAttribute("max", maxValue);
+    sliderInput.setAttribute("step", stepSize);
+    sliderInput.setAttribute("value", associatedProperty);
+
+    return sliderInput;
+  }
+
+  createBaseValueSliderDiv(
+    minValue,
+    maxValue,
+    stepSize,
+    associatedProperty,
+    id,
+    sliderName
+  ) {
+    let self = this;
+
+    let sliderDiv = document.createElement("div");
+    sliderDiv.setAttribute("class", "slider-div");
+
+    let sliderDivInfo = this.createSliderInfo(sliderName, associatedProperty);
+    sliderDiv.appendChild(sliderDivInfo);
+
+    let sliderInput = this.createSliderElement(
+      id,
+      minValue,
+      maxValue,
+      stepSize,
+      associatedProperty
+    );
+    sliderDiv.appendChild(sliderInput);
+    sliderInput.onchange = function () {
+      self.base = this.value;
+      self.renderPlot();
+    };
+
+    return sliderDiv;
+  }
+
+  plotPoints() {
+    var canvas = document.querySelector("canvas");
+    var cntxt = canvas.getContext("2d");
+    cntxt.beginPath();
+
+    //The very high base and very low base will have high values of extreme points. To fit the points, we scale them heavily
+    if (this.base >= 4 || this.base <= 0.3) {
+      for (let i = -canvas.width / 60; i < canvas.width / 60; i += 0.01) {
+        let x_cord = i;
+        //Scale the points
+        let xCordScaled = x_cord * 30;
+        //Translate the points so that (0,0) lies at centre
+        let xCordTranslated = canvas.width / 2 + xCordScaled;
+
+        let y_cord = this.base ** i;
+
+        let yCordScaled = y_cord * 0.001;
+        let yCordTranslated = canvas.height / 2 - yCordScaled;
+        cntxt.lineTo(xCordTranslated, yCordTranslated);
       }
-
-      cntxt.strokeStyle = "black";
-      cntxt.stroke();
     } else {
-      console.log(
-        "Exponential Plots are only defined for positive base values"
-      );
+      for (let i = -canvas.width / 40; i < canvas.width / 40; i += 0.1) {
+        let x_cord = i;
+        //Scale the points
+        let xCordScaled = x_cord * 20;
+        //Translate the points so that (0,0) lies at centre
+        let xCordTranslated = canvas.width / 2 + xCordScaled;
+
+        let y_cord = this.base ** i;
+
+        let yCordScaled = y_cord * 0.01;
+        let yCordTranslated = canvas.height / 2 - yCordScaled;
+        cntxt.lineTo(xCordTranslated, yCordTranslated);
+      }
     }
+
+    cntxt.strokeStyle = "black";
+    cntxt.stroke();
+  }
+
+  renderPlot() {
+    this.renderPlotOutline();
+
+    let baseValueSliderDiv = this.createBaseValueSliderDiv(
+      0.1,
+      5,
+      0.1,
+      this.base,
+      "expoential-base",
+      "Set Exponential Base"
+    );
+
+    let sliderDivArray = [baseValueSliderDiv];
+
+    this.showSliders(sliderDivArray);
+
+    this.plotPoints();
   }
 }
