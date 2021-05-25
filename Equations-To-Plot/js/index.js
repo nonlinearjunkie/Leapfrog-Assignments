@@ -14,7 +14,7 @@ let algebraicFcnObj = new AlgebraicFunctions("Algebraic", [
 ]);
 
 //Trigonometric Functions SubClasses
-let sineObj = new SineFunction("sine", 10, 0.1, 2, 0);
+let sineObj = new SineFunction("sine", 10, 0.1, 0, -5);
 let cosineObj = new CosineFunction("cosine", 10, 0.1, 0, 0);
 let tangentObj = new TangentFunction("tangent", 10, 0.05, 0, 0);
 
