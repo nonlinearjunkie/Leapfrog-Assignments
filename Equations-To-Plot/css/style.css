@@ -14,6 +14,26 @@ header {
     border: none;
 }
 
+.function-type-li:hover {
+    font-size: 26px;
+    padding: 25px 42px;
+    cursor: pointer;
+}
+
+.logo-wrapper:hover {
+    cursor: pointer;
+}
+
+.header-links {
+    font-family: "Questrial", sans-serif;
+    font-size: 20px;
+}
+
+.header-links:hover {
+    cursor: pointer;
+    font-size: 23px;
+}
+
 .plotHeading,
 .sliderHeading {
     font-family: "EB Garamond", serif;

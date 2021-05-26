@@ -10,6 +10,11 @@
     height: auto;
 }
 
+.header-links {
+    padding-top: 30px;
+    margin-left: 60%;
+}
+
 .left {
     float: left;
 }
@@ -20,7 +25,7 @@
 }
 
 .function-type-li {
-    margin: 40px 60px;
+    margin: 50px 70px;
     padding: 25px 40px;
 }
 
