@@ -27,9 +27,9 @@ let trigonometricFcnObj = new TrigonoMetricFunctions("Trigonometric", [
 ]);
 
 //Trigonometric Functions SubClasses
-let sinhObj = new SinhFunction("sinh", 1, 1 / (2 * Math.PI));
-let coshObj = new CoshFunction("cosh", 1, 1 / (2 * Math.PI));
-let tanhObj = new TanhFunction("tanh", 1, 1 / (2 * Math.PI));
+let sinhObj = new SinhFunction("sinh", 1, 0.1);
+let coshObj = new CoshFunction("cosh", 1, 0.1);
+let tanhObj = new TanhFunction("tanh", 1);
 
 //Hyperbolic Function Object with  SubClasses
 let hyperbolicFcnObj = new HyperbolicFunctions("Hyperbolic", [

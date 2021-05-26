@@ -8,7 +8,8 @@ class HyperbolicFunctionType {
   constructor(functionName, amplitude, frequency) {
     this.functionName = functionName;
     this.A = amplitude;
-    let angularFrequency = 2 * Math.PI * frequency;
+    this.frequency = frequency;
+    let angularFrequency = (2 * Math.PI * this.frequency).toFixed(2);
     this.b = angularFrequency;
   }
 
@@ -35,6 +36,7 @@ class HyperbolicFunctionType {
     cntxt.stroke();
   }
 
+  //layout of the plot
   renderPlotOutline() {
     let mainContainer = document.getElementById("container");
     mainContainer.setAttribute("class", "clearfix");
@@ -62,20 +64,138 @@ class HyperbolicFunctionType {
     this.drawYAxis();
   }
 
-  renderPlot() {}
-}
+  showSliders(sliderDivArray) {
+    let mainContainer = document.getElementById("container");
+    let sliderContainer = document.createElement("div");
+    sliderContainer.setAttribute("class", "slider-container left");
 
-// Class for sinh Equation
-//General sinh eqn: y=A*sinh(bx)
+    let sliderHeading = document.createElement("div");
+    sliderHeading.setAttribute("class", "sliderHeading");
+    sliderHeading.innerHTML = `<h3> Slider Controls</h3>`;
+    sliderContainer.appendChild(sliderHeading);
 
-class SinhFunction extends HyperbolicFunctionType {
-  constructor(functionName, amplitude, frequency) {
-    super(functionName, amplitude, frequency);
+    sliderDivArray.forEach(function (sliderDiv) {
+      sliderContainer.appendChild(sliderDiv);
+    });
+
+    mainContainer.appendChild(sliderContainer);
+
+    console.log("Show Slider called");
   }
 
-  renderPlot() {
-    console.log("render plot of sinh");
+  //Method to create Info about SLider-name and value
+  //Takes name for slider and associated property(Value of object property associated with slider)
 
+  createSliderInfo(sliderName, associatedProperty) {
+    let sliderDivInfo = document.createElement("div"); //container for slider heading and value
+    sliderDivInfo.setAttribute("class", "slider-div-info clearfix");
+
+    let sliderDivHeading = document.createElement("div");
+    sliderDivHeading.innerHTML = `<h4>${sliderName}</h4>`;
+    sliderDivHeading.setAttribute("class", "slider-div-heading left");
+    sliderDivInfo.appendChild(sliderDivHeading);
+
+    let silderDivValue = document.createElement("div");
+    silderDivValue.innerHTML = `<p> Value: ${associatedProperty}`;
+    silderDivValue.setAttribute("class", "slider-div-value left");
+    sliderDivInfo.appendChild(silderDivValue);
+
+    return sliderDivInfo;
+  }
+
+  //method to create slider Input
+  createSliderElement(id, minValue, maxValue, stepSize, associatedProperty) {
+    let sliderInput = document.createElement("input");
+    sliderInput.setAttribute("class", "slider");
+    sliderInput.setAttribute("type", "range");
+    sliderInput.setAttribute("id", id);
+    sliderInput.setAttribute("min", minValue);
+    sliderInput.setAttribute("max", maxValue);
+    sliderInput.setAttribute("step", stepSize);
+    sliderInput.setAttribute("value", associatedProperty);
+
+    return sliderInput;
+  }
+
+  //method to create slider Block for controlling amplitude of trigonometric Functions
+
+  createAmplitudeSliderDiv(
+    minValue,
+    maxValue,
+    stepSize,
+    associatedProperty,
+    id,
+    sliderName
+  ) {
+    let self = this;
+
+    let sliderDiv = document.createElement("div");
+    sliderDiv.setAttribute("class", "slider-div");
+
+    let sliderDivInfo = this.createSliderInfo(sliderName, associatedProperty);
+    sliderDiv.appendChild(sliderDivInfo);
+
+    let sliderInput = this.createSliderElement(
+      id,
+      minValue,
+      maxValue,
+      stepSize,
+      associatedProperty
+    );
+    sliderDiv.appendChild(sliderInput);
+    sliderInput.onchange = function () {
+      self.A = this.value;
+      self.renderPlot();
+    };
+
+    return sliderDiv;
+  }
+
+  //method to create slider Block for controlling Frequency of trigonometric Functions
+
+  createFrequencySliderDiv(
+    minValue,
+    maxValue,
+    stepSize,
+    associatedProperty,
+    id,
+    sliderName
+  ) {
+    let self = this;
+
+    let sliderDiv = document.createElement("div");
+    sliderDiv.setAttribute("class", "slider-div");
+
+    let sliderDivInfo = this.createSliderInfo(sliderName, associatedProperty);
+    sliderDiv.appendChild(sliderDivInfo);
+
+    let sliderInput = this.createSliderElement(
+      id,
+      minValue,
+      maxValue,
+      stepSize,
+      associatedProperty
+    );
+    sliderDiv.appendChild(sliderInput);
+    sliderInput.onchange = function () {
+      self.frequency = this.value;
+      self.b = 2 * Math.PI * this.value;
+      self.renderPlot();
+    };
+
+    return sliderDiv;
+  }
+}
+
+// Class for Sine wave Equation
+//General Sine Wave eqn: y=A*sin(b(x+h))+k
+
+class SinhFunction extends HyperbolicFunctionType {
+  constructor(functionName, amplitude, frequency, phaseShift, verticalShift) {
+    super(functionName, amplitude, frequency, phaseShift, verticalShift);
+  }
+
+  plotPoints() {
     //assign properties to variables ( y=A*sinh(bx))
     let A = this.A;
     let b = this.b;
@@ -103,6 +223,33 @@ class SinhFunction extends HyperbolicFunctionType {
     cntxt.strokeStyle = "black";
     cntxt.stroke();
   }
+
+  renderPlot() {
+    this.renderPlotOutline();
+    this.plotPoints();
+
+    let amplitudeSliderDiv = this.createAmplitudeSliderDiv(
+      -10,
+      10,
+      1,
+      this.A,
+      "amplitude-sinh",
+      "Set Amplitude"
+    );
+
+    let frequencySliderDiv = this.createFrequencySliderDiv(
+      0,
+      3,
+      0.1,
+      this.frequency,
+      "frequency-sinh",
+      "Set Frequency"
+    );
+
+    let sliderDivArray = [amplitudeSliderDiv, frequencySliderDiv];
+
+    this.showSliders(sliderDivArray);
+  }
 }
 
 // Class for cosh Equation
@@ -113,9 +260,7 @@ class CoshFunction extends HyperbolicFunctionType {
     super(functionName, amplitude, frequency);
   }
 
-  renderPlot() {
-    console.log("render plot of cosh");
-
+  plotPoints() {
     //assign properties to variables ( y=A*sinh(bx))
     let A = this.A;
     let b = this.b;
@@ -144,24 +289,46 @@ class CoshFunction extends HyperbolicFunctionType {
     cntxt.strokeStyle = "black";
     cntxt.stroke();
   }
+
+  renderPlot() {
+    this.renderPlotOutline();
+    this.plotPoints();
+
+    let amplitudeSliderDiv = this.createAmplitudeSliderDiv(
+      -10,
+      10,
+      1,
+      this.A,
+      "amplitude-cosh",
+      "Set Amplitude"
+    );
+
+    let frequencySliderDiv = this.createFrequencySliderDiv(
+      0,
+      0.3,
+      0.01,
+      this.frequency,
+      "frequency-cosh",
+      "Set Frequency"
+    );
+
+    let sliderDivArray = [amplitudeSliderDiv, frequencySliderDiv];
+
+    this.showSliders(sliderDivArray);
+  }
 }
 
 // Class for tanhh Equation
 //General tanh eqn: y=A*tanh(bx)
 
 class TanhFunction extends HyperbolicFunctionType {
-  constructor(functionName, amplitude, frequency) {
-    super(functionName, amplitude, frequency);
+  constructor(functionName, amplitude) {
+    super(functionName, amplitude);
   }
 
-  renderPlot() {
-    console.log("render plot of tanh");
-
-    console.log("render plot of sinh");
-
-    //assign properties to variables ( y=A*sinh(bx))
+  plotPoints() {
+    //assign properties to variables ( y=A*tanh(bx))
     let A = this.A;
-    let b = this.b;
 
     this.renderPlotOutline();
 
@@ -176,7 +343,7 @@ class TanhFunction extends HyperbolicFunctionType {
       //Translate the points so that (0,0) lies at centre
       let xCordTranslated = canvas.width / 2 + xCordScaled;
 
-      let y_cord = A * Math.tanh(b * i);
+      let y_cord = A * Math.tanh(i);
       let yCordScaled = y_cord * 10;
       let yCordTranslated = canvas.height / 2 - yCordScaled;
 
@@ -185,5 +352,23 @@ class TanhFunction extends HyperbolicFunctionType {
 
     cntxt.strokeStyle = "black";
     cntxt.stroke();
+  }
+
+  renderPlot() {
+    this.renderPlotOutline();
+    this.plotPoints();
+
+    let amplitudeSliderDiv = this.createAmplitudeSliderDiv(
+      -15,
+      15,
+      1,
+      this.A,
+      "amplitude-tanh",
+      "Set Amplitude"
+    );
+
+    let sliderDivArray = [amplitudeSliderDiv];
+
+    this.showSliders(sliderDivArray);
   }
 }
