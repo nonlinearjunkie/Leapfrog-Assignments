@@ -52,4 +52,12 @@ let homeDisplayObj = new HomeDisplay([
   gaussianFunctionObj,
 ]);
 
+//Show 3D Plot when 3D Plot is clicked on nav bar
+let threedPlotDiv = document.getElementById("threeDPlotDiv");
+threedPlotDiv.addEventListener("click", showThreedPlot);
+function showThreedPlot() {
+  let threeDPlotObj = new ThreeDPlot();
+  threeDPlotObj.renderthreedDPlot();
+}
+
 homeDisplayObj.dispayFunctionTypes();

@@ -40,6 +40,11 @@
     width: 760px;
 }
 
+.threed-plot-container {
+    width: 1100px;
+    margin: 40px auto;
+}
+
 .slider-container {
     margin-left: 10%;
     width: 360px;
