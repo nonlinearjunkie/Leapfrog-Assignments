@@ -12,6 +12,7 @@ class ExponentialFunctions extends Function {
     cntxt.beginPath();
     cntxt.moveTo(0, canvas.height / 2);
     cntxt.lineTo(canvas.width, canvas.height / 2);
+    cntxt.lineWidth = 4;
     cntxt.strokeStyle = "#FF0000";
     cntxt.stroke();
   }
@@ -23,6 +24,7 @@ class ExponentialFunctions extends Function {
     cntxt.beginPath();
     cntxt.moveTo(canvas.width / 2, 0);
     cntxt.lineTo(canvas.width / 2, canvas.height);
+    cntxt.lineWidth = 4;
     cntxt.strokeStyle = "#FF0000";
     cntxt.stroke();
   }
@@ -172,7 +174,7 @@ class ExponentialFunctions extends Function {
         cntxt.lineTo(xCordTranslated, yCordTranslated);
       }
     }
-
+    cntxt.lineWidth = 2;
     cntxt.strokeStyle = "black";
     cntxt.stroke();
   }

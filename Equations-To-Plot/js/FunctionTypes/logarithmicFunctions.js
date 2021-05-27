@@ -18,6 +18,7 @@ class LogarithmicFunctions extends Function {
     cntxt.beginPath();
     cntxt.moveTo(0, canvas.height / 2);
     cntxt.lineTo(canvas.width, canvas.height / 2);
+    cntxt.lineWidth = 4;
     cntxt.strokeStyle = "#FF0000";
     cntxt.stroke();
   }
@@ -29,6 +30,7 @@ class LogarithmicFunctions extends Function {
     cntxt.beginPath();
     cntxt.moveTo(50, 0);
     cntxt.lineTo(50, canvas.height);
+    cntxt.lineWidth = 4;
     cntxt.strokeStyle = "#FF0000";
     cntxt.stroke();
   }
@@ -161,7 +163,7 @@ class LogarithmicFunctions extends Function {
       let yCordTranslated = canvas.height / 2 - yCordScaled;
       cntxt.lineTo(xCordTranslated, yCordTranslated);
     }
-
+    cntxt.lineWidth = 2;
     cntxt.strokeStyle = "black";
     cntxt.stroke();
   }

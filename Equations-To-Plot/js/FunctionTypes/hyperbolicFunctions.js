@@ -21,6 +21,7 @@ class HyperbolicFunctionType {
     cntxt.beginPath();
     cntxt.moveTo(0, canvas.height / 2);
     cntxt.lineTo(canvas.width, canvas.height / 2);
+    cntxt.lineWidth = 4;
     cntxt.strokeStyle = "#FF0000";
     cntxt.stroke();
   }
@@ -32,6 +33,7 @@ class HyperbolicFunctionType {
     cntxt.beginPath();
     cntxt.moveTo(canvas.width / 2, 0);
     cntxt.lineTo(canvas.width / 2, canvas.height);
+    cntxt.lineWidth = 4;
     cntxt.strokeStyle = "#FF0000";
     cntxt.stroke();
   }
@@ -219,7 +221,7 @@ class SinhFunction extends HyperbolicFunctionType {
 
       cntxt.lineTo(xCordTranslated, yCordTranslated);
     }
-
+    cntxt.lineWidth = 2;
     cntxt.strokeStyle = "black";
     cntxt.stroke();
   }
@@ -239,8 +241,8 @@ class SinhFunction extends HyperbolicFunctionType {
 
     let frequencySliderDiv = this.createFrequencySliderDiv(
       0,
-      3,
-      0.1,
+      1,
+      0.01,
       this.frequency,
       "frequency-sinh",
       "Set Frequency"
@@ -285,7 +287,7 @@ class CoshFunction extends HyperbolicFunctionType {
 
       cntxt.lineTo(xCordTranslated, yCordTranslated);
     }
-
+    cntxt.lineWidth = 2;
     cntxt.strokeStyle = "black";
     cntxt.stroke();
   }
@@ -349,7 +351,7 @@ class TanhFunction extends HyperbolicFunctionType {
 
       cntxt.lineTo(xCordTranslated, yCordTranslated);
     }
-
+    cntxt.lineWidth = 2;
     cntxt.strokeStyle = "black";
     cntxt.stroke();
   }

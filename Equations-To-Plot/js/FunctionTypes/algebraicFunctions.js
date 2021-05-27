@@ -16,6 +16,7 @@ class AlgebraicFunctionType {
     var cntxt = canvas.getContext("2d");
     cntxt.beginPath();
     cntxt.moveTo(0, canvas.height / 2);
+    cntxt.lineWidth = 4;
     cntxt.lineTo(canvas.width, canvas.height / 2);
     cntxt.strokeStyle = "#FF0000";
     cntxt.stroke();
@@ -26,6 +27,7 @@ class AlgebraicFunctionType {
     var canvas = document.querySelector("canvas");
     var cntxt = canvas.getContext("2d");
     cntxt.beginPath();
+    cntxt.lineWidth = 4;
     cntxt.moveTo(canvas.width / 2, 0);
     cntxt.lineTo(canvas.width / 2, canvas.height);
     cntxt.strokeStyle = "#FF0000";
@@ -169,7 +171,7 @@ class Constant extends AlgebraicFunctionType {
       let y_cord = this.constant;
       let yCordScaled = y_cord * 10;
       let yCordTranslated = canvas.height / 2 - yCordScaled;
-
+      cntxt.lineWidth = 2;
       cntxt.lineTo(xCordTranslated, yCordTranslated);
     }
 
@@ -285,6 +287,7 @@ class Linear extends AlgebraicFunctionType {
       let y_cord = this.slope * i - this.yIntercept;
       let yCordScaled = y_cord * 10;
       let yCordTranslated = canvas.height / 2 - yCordScaled;
+      cntxt.lineWidth = 2;
       cntxt.lineTo(xCordTranslated, yCordTranslated);
     }
     cntxt.strokeStyle = "black";
@@ -441,6 +444,7 @@ class Quadratic extends AlgebraicFunctionType {
       let yCordTranslated = canvas.height / 2 - yCordScaled;
       cntxt.lineTo(xCordTranslated, yCordTranslated);
     }
+    cntxt.lineWidth = 2;
     cntxt.strokeStyle = "black";
     cntxt.stroke();
   }
@@ -449,8 +453,8 @@ class Quadratic extends AlgebraicFunctionType {
     this.renderPlotOutline();
 
     let ASliderDiv = this.createASliderDiv(
-      -5,
-      5,
+      -10,
+      10,
       1,
       this.a,
       "a-quadratic",
@@ -458,8 +462,8 @@ class Quadratic extends AlgebraicFunctionType {
     );
 
     let BSliderDiv = this.createBSliderDiv(
-      -5,
-      5,
+      -10,
+      10,
       1,
       this.b,
       "b-quadratic",
@@ -467,8 +471,8 @@ class Quadratic extends AlgebraicFunctionType {
     );
 
     let CSliderDiv = this.createCSliderDiv(
-      -5,
-      5,
+      -10,
+      10,
       1,
       -this.c,
       "c-quadratic",
@@ -640,6 +644,7 @@ class Cubic extends AlgebraicFunctionType {
       let yCordTranslated = canvas.height / 2 - yCordScaled;
       cntxt.lineTo(xCordTranslated, yCordTranslated);
     }
+    cntxt.lineWidth = 2;
     cntxt.strokeStyle = "black";
     cntxt.stroke();
   }

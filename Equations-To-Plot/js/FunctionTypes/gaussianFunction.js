@@ -14,6 +14,7 @@ class GaussianFunctions extends Function {
     cntxt.beginPath();
     cntxt.moveTo(0, canvas.height - 50);
     cntxt.lineTo(canvas.width, canvas.height - 50);
+    cntxt.lineWidth = 4;
     cntxt.strokeStyle = "#FF0000";
     cntxt.stroke();
   }
@@ -25,6 +26,7 @@ class GaussianFunctions extends Function {
     cntxt.beginPath();
     cntxt.moveTo(canvas.width / 2, 0);
     cntxt.lineTo(canvas.width / 2, canvas.height);
+    cntxt.lineWidth = 4;
     cntxt.strokeStyle = "#FF0000";
     cntxt.stroke();
   }
@@ -192,11 +194,11 @@ class GaussianFunctions extends Function {
       let exponent = exponentNumerator / expoentDenominator;
       let y_cord = amplitude * Math.E ** exponent;
 
-      let yCordScaled = y_cord * 1000; //Multiply heavily as the results are probabilities are very low
+      let yCordScaled = y_cord * 1500; //Multiply heavily as the results are probabilities are very low
       let yCordTranslated = canvas.height - 50 - yCordScaled;
       cntxt.lineTo(xCordTranslated, yCordTranslated);
     }
-
+    cntxt.lineWidth = 2;
     cntxt.strokeStyle = "black";
     cntxt.stroke();
   }
