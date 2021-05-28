@@ -30,7 +30,7 @@ header {
     font-size: 20px;
 }
 
-.header-links:hover {
+.header-links div:hover {
     cursor: pointer;
     font-size: 23px;
 }
@@ -74,4 +74,31 @@ header {
     border-radius: 50%;
     background: #d2691e;
     cursor: pointer;
+}
+
+.submit-btn {
+    font-family: "Questrial", sans-serif;
+    font-size: 20px;
+    background-color: #1c1105;
+    color: #ffffff;
+    border: none;
+}
+
+.submit-btn:hover {
+    font-size: 21px;
+    margin-top: 50px;
+    padding: 13px 23px;
+    cursor: pointer;
+}
+
+.eqn-inp-form {
+    font-family: "EB Garamond", serif;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.solve-eqn-result {
+    font-family: "EB Garamond", serif;
+    font-size: 30px;
 }

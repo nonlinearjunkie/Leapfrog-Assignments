@@ -60,4 +60,12 @@ function showThreedPlot() {
   threeDPlotObj.renderthreedDPlot();
 }
 
+//Show Eqn Solver is clicked on nav bar
+let eqnSolverDiv = document.getElementById("solve-eqn-div");
+eqnSolverDiv.addEventListener("click", showEqnSolver);
+function showEqnSolver() {
+  let solveEqnObj = new SolveEqn(1, 7, 9);
+  solveEqnObj.renderInputForm();
+}
+
 homeDisplayObj.dispayFunctionTypes();
