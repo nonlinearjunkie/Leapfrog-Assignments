@@ -7,7 +7,6 @@ class ExponentialFunctions extends Function {
   //X-axis
   drawXAxis() {
     var canvas = document.querySelector("canvas");
-    console.log(canvas);
     var cntxt = canvas.getContext("2d");
     cntxt.beginPath();
     cntxt.moveTo(0, canvas.height / 2);

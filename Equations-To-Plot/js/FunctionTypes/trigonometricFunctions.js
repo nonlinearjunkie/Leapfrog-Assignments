@@ -18,7 +18,6 @@ class TrigonometricFunctionType {
   //X-axis
   drawXAxis() {
     var canvas = document.querySelector("canvas");
-    console.log(canvas);
     var cntxt = canvas.getContext("2d");
     cntxt.beginPath();
     cntxt.moveTo(0, canvas.height / 2);
@@ -83,8 +82,6 @@ class TrigonometricFunctionType {
     });
 
     mainContainer.appendChild(sliderContainer);
-
-    console.log("Show Slider called");
   }
 
   //Method to create Info about SLider-name and value
@@ -281,7 +278,6 @@ class SineFunction extends TrigonometricFunctionType {
     var canvas = document.querySelector("canvas");
     var cntxt = canvas.getContext("2d");
     cntxt.beginPath();
-    console.log("sine plot", k);
 
     for (let i = -canvas.width / 20; i < canvas.width / 20; i += 0.1) {
       let x_cord = i;
@@ -362,7 +358,7 @@ class CosineFunction extends TrigonometricFunctionType {
   }
 
   plotPoints() {
-    //assign properties to variables ( y=A * sin(b(x + h)) + k)
+    //assign properties to variables ( y=A * cos(b(x + h)) + k)
     let A = this.A;
     let b = this.b;
     let h = this.h;
@@ -371,7 +367,6 @@ class CosineFunction extends TrigonometricFunctionType {
     var canvas = document.querySelector("canvas");
     var cntxt = canvas.getContext("2d");
     cntxt.beginPath();
-    console.log("sine plot", k);
 
     for (let i = -canvas.width / 20; i < canvas.width / 20; i += 0.1) {
       let x_cord = i;

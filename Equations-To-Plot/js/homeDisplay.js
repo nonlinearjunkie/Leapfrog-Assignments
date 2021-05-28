@@ -14,13 +14,10 @@ class HomeDisplay {
     functionTypesContainer.appendChild(functionTypesList);
 
     this.functionTypesArray.forEach(function (functionTypeObj) {
-      console.log(functionTypeObj.functionName);
       let functionTypeElement = document.createElement("li");
       functionTypeElement.setAttribute("class", "function-type-li left");
       functionTypeElement.innerText = functionTypeObj.functionName;
       functionTypeElement.addEventListener("click", function () {
-        console.log(functionTypeObj);
-
         if (functionTypeObj.functionObjectsArray !== undefined) {
           //render subclasses of a Function Type if it has subclasses
           functionTypeObj.renderFunctionTypes();

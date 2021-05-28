@@ -9,7 +9,6 @@ class GaussianFunctions extends Function {
   /*We only need 1st quadrant and 2nd quadrant as probability values can never be negative */
   drawXAxis() {
     var canvas = document.querySelector("canvas");
-    console.log(canvas);
     var cntxt = canvas.getContext("2d");
     cntxt.beginPath();
     cntxt.moveTo(0, canvas.height - 50);

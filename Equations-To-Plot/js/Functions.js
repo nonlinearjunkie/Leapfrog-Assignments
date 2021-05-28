@@ -8,7 +8,6 @@ class Function {
 
   //render all the sub-classes of functions
   renderFunctionTypes() {
-    console.log(this.functionName + " Functions Types");
     let contentsArray = this.functionObjectsArray;
     let mainContainer = document.getElementById("container");
     mainContainer.innerHTML = ""; //Empty the section container
@@ -21,7 +20,6 @@ class Function {
     functionObjectsContainer.appendChild(functionObjectsList);
 
     contentsArray.forEach(function (fcnObject) {
-      console.log(fcnObject.functionName);
       let fcnObjectElement = document.createElement("li");
       fcnObjectElement.setAttribute("class", "function-type-li left");
       fcnObjectElement.innerText = fcnObject.functionName;
