@@ -15,7 +15,6 @@ header {
 }
 
 .function-type-li:hover {
-    font-size: 26px;
     padding: 25px 42px;
     margin: 50px 67px;
     cursor: pointer;
