@@ -1,0 +1,11 @@
+{
+  "name": "node-file-operations",
+  "version": "1.0.0",
+  "description": "Script to create,modify,read and delete files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Suraj Joshi",
+  "license": "ISC"
+}
