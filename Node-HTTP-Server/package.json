@@ -1,0 +1,16 @@
+{
+    "name": "node-http-server",
+    "version": "1.0.0",
+    "description": "HTTP Server Using Node To serve HTML Files",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js",
+        "dev": "nodemon index.js"
+    },
+    "author": "Suraj Joshi",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    }
+}
